@@ -6,7 +6,7 @@ HRESULT playGround::Init()
 {
 	gameNode::Init(true); // 불~~~~~~~편
 	
-	//맛점_은솔
+	//맛점_은솔 --> 오늘의 메뉴는 수유리 우동집입니다. 
 
 
 	return S_OK;
