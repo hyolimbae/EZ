@@ -16,8 +16,7 @@ HRESULT playGround::Init()
 {
 	gameNode::Init(true);
 
-	
-
+	//hyolimhyolim!
 
 
 	return S_OK;
