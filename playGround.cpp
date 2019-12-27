@@ -12,6 +12,8 @@ HRESULT playGround::Init()
 
 	//???한번더?
 
+	// 팀장은 민욱이다.
+
 	return S_OK;
 }
 
