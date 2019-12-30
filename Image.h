@@ -1,8 +1,4 @@
 #pragma once
-
-
-
-
 #define RAD_TO_DEG 180/PI
 
 namespace Pivot
@@ -27,8 +23,8 @@ private:
 	ID2D1Bitmap*		_bitmap;
 	float				_alpha;			//이미지 투명도
 
-	Vector2			_size;			//이미지 크기
-	Vector2		_scale;			//x,y 크기 확대,축소 배율
+	Vector2				_size;			//이미지 크기
+	Vector2				_scale;			//x,y 크기 확대,축소 배율
 	float				_angle;
 
 	tagLoadedImageInfo	_loadInfo;		//이미지 로드 정보
@@ -68,7 +64,8 @@ public:
 
 	//랜더
 	void Render(int x, int y, Pivot::Enum pivot = Pivot::LEFT_TOP, bool isRelativePos = TRUE);
-	void FrameRender(int x, int y, int frameX, int frameY, Pivot::Enum pivot = Pivot::LEFT_TOP, bool isRelativePos = TRUE);
+	void FrameRender(int x, int y, int frameX, Pivot::Enum pivot = Pivot::LEFT_TOP, bool isRelativePos = TRUE);
+
 
 	//옵션
 	void SetSize(Vector2 size) { _size = size; }
@@ -102,17 +99,22 @@ public:
 
 	bool IsFrameImage()
 	{
-		if (_frameInfo.size() == 1) return false;
-		else if (_frameInfo.size() > 1)return true;
+		if (_frameInfo.size() == 1) 
+			return false;
+		else if (_frameInfo.size() > 1)
+			return true;
 	}
 
 	tagLoadedImageInfo GetLoadInfo() { return _loadInfo; }
+
 
 	//픽셀충돌용
 	void SetPixelDC(HDC pixelDC) { _pixelCollisionDC = pixelDC; }
 	//COLORREF GetPixel(int imageLeft, int imageTop, int x, int y);
 	//COLORREF GetPixel(int x, int y);
 	HDC GetPixelDC() { return _pixelCollisionDC; }
+
+	//세터 
 
 
 public:

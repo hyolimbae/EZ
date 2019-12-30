@@ -85,8 +85,6 @@ public:
 	void DrawTextField(int x, int y, wstring text, COLORREF rgb, int size, int width, int height, float alpha = 1.0f, DWRITE_TEXT_ALIGNMENT align = DWRITE_TEXT_ALIGNMENT_CENTER, wstring font = L"맑은고딕");
 
 
-
-
 	//==============================================================
 	// ## 도형 그리기 함수 ##
 

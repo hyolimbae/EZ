@@ -47,7 +47,7 @@ using namespace SEVENTEEN_UTIL;
 #define TXTDATA txtData::getSingleton()
 #define SOUNDMANAGER SoundManager::getSingleton()
 #define PHYSICSMANAGER PhysicsManager::getSingleton()
-#define CAMAERAMANAGER CameraManager::getSingleton()
+#define CAMERAMANAGER CameraManager::getSingleton()
 
 #include "Box2D/Box2D.h"
 #pragma comment(lib, "lib/x86_64/Debug/Box2D.lib")

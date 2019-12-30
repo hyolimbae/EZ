@@ -23,20 +23,24 @@ class GameObject : public Object
 {
 protected:
 
-	GameObject();
-
 
 	Physics*			_physics;
 	Transform*			_transform;
 	Image*				_sprite = nullptr;
 	CollisionCallBack	_callBack;
 
-
+	Vector2 _currentPosition = Vector2(0, 1);
+	float _deltaTime = 0.3f;
+	bool _loop;
+	int _count = 0;
 public:
-	virtual void Render() override;
-	virtual void Release() override;
 
-	//static GameObject* CreateObject(GameObject* parent = nullptr);
+	GameObject();
+
+
+	virtual void Render() override;
+	virtual void Update() override;
+	virtual void Release() override;
 
 
 	//CALLBACK 
@@ -49,10 +53,13 @@ public:
 	Image* GetSprite();
 	Physics* GetPhysics() { return _physics; }
 	Transform* GetTransform() { return _transform; }
+	Vector2 getCurrentPosition() { return _currentPosition; }
+
 
 	//SETTER
 	void SetSprite(Image* sprite);
-
+	void SetDeltaTime(float deltaTime) { _deltaTime = deltaTime; }
+	void SetCurrentPosition(Vector2 vec) { _currentPosition = vec; }
 
 
 	template <typename T>

@@ -4,12 +4,12 @@
 GameObject::GameObject()
 {
 	_transform = new Transform();
-	//_physics = new Physics();
 }
 
 void GameObject::SetSprite(Image* sprite)
 {
 	_sprite = sprite;
+	_currentPosition = Vector2(0, 1);
 }
 
 void GameObject::Release()
@@ -21,18 +21,6 @@ void GameObject::Release()
 	delete _physics;
 	delete this;
 }
-
-//GameObject * GameObject::CreateObject(GameObject * parent)
-//{
-//	GameObject* newObject = new GameObject();
-//
-//	if (parent == nullptr)
-//		newObject->SetParent(SceneManager::GetInstance()->GetNowScene());
-//	else
-//		newObject->SetParent(parent);
-//
-//	return newObject;
-//}
 
 Image* GameObject::GetSprite()
 {
@@ -55,14 +43,33 @@ void GameObject::SetCollisionExitFunc(function<void(GameObject*, GameObject*)> e
 	_callBack._exit = exit;
 }
 
+void GameObject::Update()
+{
+	if (!_sprite || !_sprite->IsFrameImage())
+		return;
+	_count++;
+	if (TIMEMANAGER->GetFPS()*_deltaTime / _count == 1)
+	{
+		_currentPosition.x = (int)(_currentPosition.x+1) % (_sprite->GetMaxFrameX());
+		_count = 0;
+	}
+	_currentPosition.y = 0;
+}
+
 void GameObject::Render()
 {
 	if (!_sprite)
 		return;
+
 	Vector2 position = _transform->GetPosition();
 	_sprite->SetAngle(_transform->GetRotation());
 	_sprite->SetScale(_transform->GetScale());
 	_sprite->SetAlpha(_transform->GetAlpha());
 	_sprite->SetSize(_transform->GetSize());
-	_sprite->Render(position.x, position.y,Pivot::CENTER);
+
+
+	if(_sprite->IsFrameImage()) 
+		_sprite->FrameRender(position.x, position.y, _currentPosition.x, Pivot::CENTER);
+	else 
+		_sprite->Render(position.x, position.y,Pivot::CENTER);
 }

@@ -40,7 +40,7 @@ HRESULT gameNode::Init(bool managerInit)
 
 	if (_managerInit)
 	{
-		SetTimer(_hWnd, 1, 10, NULL);
+		SetTimer(_hWnd, 1, 1.f/60, NULL);
 		IMAGEMANAGER->Init();
 		TXTDATA->Init();
 		TIMEMANAGER->Init();
@@ -77,9 +77,9 @@ void gameNode::Update()
 {
 	KEYMANAGER->Update();
 	PHYSICSMANAGER->Update();
+	CAMERAMANAGER->Update();
 	for (auto c : _children)
 		c->Update();
-	//_physicsWorld->Step(TIMEMANAGER->getWorldTime(), 8, 3);
 }
 
 void gameNode::Render()
@@ -97,7 +97,6 @@ void gameNode::Render()
 	for (auto c : _children)
 		c->Render();
 
-	
 
 	PHYSICSMANAGER->Render();
 

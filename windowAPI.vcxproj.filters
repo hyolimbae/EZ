@@ -5,10 +5,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="헤더 파일">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="리소스 파일">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -46,22 +42,32 @@
     <Filter Include="playGround\object">
       <UniqueIdentifier>{2f0953bc-0647-4b83-a4b1-19338f4eb879}</UniqueIdentifier>
     </Filter>
+    <Filter Include="playGround\obstacle">
+      <UniqueIdentifier>{53693ca7-089f-4187-9458-f5a9c3acb1a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\character">
+      <UniqueIdentifier>{2240800b-8319-428d-bf74-9b951ca48096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>소스 파일\헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>소스 파일\헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Resource.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>소스 파일\헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="windowAPI.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>소스 파일\헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="commonMacroFunction.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>소스 파일\헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="gameNode.h">
       <Filter>2DGameFramework</Filter>
@@ -73,7 +79,7 @@
       <Filter>2DGameFramework\SingletonBase</Filter>
     </ClInclude>
     <ClInclude Include="randomFunction.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>소스 파일\헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="utils.h">
       <Filter>2DGameFramework\Util</Filter>
@@ -83,9 +89,6 @@
     </ClInclude>
     <ClInclude Include="timer.h">
       <Filter>2DGameFramework\timer</Filter>
-    </ClInclude>
-    <ClInclude Include="animation.h">
-      <Filter>2DGameFramework\animation</Filter>
     </ClInclude>
     <ClInclude Include="Vector2.h">
       <Filter>2DGameFramework\Math</Filter>
@@ -141,6 +144,36 @@
     <ClInclude Include="EZ.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>2DGameFramework\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Grinder.h">
+      <Filter>playGround\obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>playGround\character</Filter>
+    </ClInclude>
+    <ClInclude Include="ElectricBox.h">
+      <Filter>playGround\obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="ElectricRod.h">
+      <Filter>playGround\obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="BrokenWall.h">
+      <Filter>playGround\obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyHole.h">
+      <Filter>playGround\obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="Exit.h">
+      <Filter>playGround\obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="Switch.h">
+      <Filter>playGround\obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="Ground.h">
+      <Filter>playGround\obstacle</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -163,9 +196,6 @@
     </ClCompile>
     <ClCompile Include="timer.cpp">
       <Filter>2DGameFramework\timer</Filter>
-    </ClCompile>
-    <ClCompile Include="animation.cpp">
-      <Filter>2DGameFramework\animation</Filter>
     </ClCompile>
     <ClCompile Include="Vector2.cpp">
       <Filter>2DGameFramework\Math</Filter>
@@ -217,6 +247,36 @@
     </ClCompile>
     <ClCompile Include="SceneManager.cpp">
       <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>2DGameFramework\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Grinder.cpp">
+      <Filter>playGround\obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>playGround\character</Filter>
+    </ClCompile>
+    <ClCompile Include="ElectricBox.cpp">
+      <Filter>playGround\obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="ElectricRod.cpp">
+      <Filter>playGround\obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="BrokenWall.cpp">
+      <Filter>playGround\obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyHole.cpp">
+      <Filter>playGround\obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="Exit.cpp">
+      <Filter>playGround\obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="Switch.cpp">
+      <Filter>playGround\obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="Ground.cpp">
+      <Filter>playGround\obstacle</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
