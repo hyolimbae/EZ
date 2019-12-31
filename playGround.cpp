@@ -37,7 +37,6 @@ HRESULT playGround::Init()
 	IMAGEMANAGER->AddImage("Wall_z2", L"Image/wall_z2.png");
 	IMAGEMANAGER->AddImage("Wall_z3", L"Image/wall_z3.png");
 
-	MakeZWall("Wall_z1", Vector2(756-50, 92), 50, 352);
 
 
 	auto _background = new GameObject();
@@ -90,7 +89,7 @@ HRESULT playGround::Init()
 	MakeGround(Vector2(1360, 92), 50, 150);
 
 	//Z-WALL
-	//MakeZWall("Wall_z1", Vector2(756, 92), 50, 352);
+	MakeZWall("Wall_z1", Vector2(756, 92), 50, 352);
 	MakeZWall("Wall_z2", Vector2(1664, 1300), 50, 252);
 	MakeZWall("Wall_z2", Vector2(2218, 1300), 50, 252);
 	MakeZWall("Wall_z3", Vector2(1260, 1654), 50, 202);
