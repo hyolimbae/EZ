@@ -43,24 +43,45 @@ HRESULT playGround::Init()
 
 	//LEFT_TOP
 	CAMERAMANAGER->SetPosition(Vector2((-1)*BACKGROUND_WIDTH/2+WINSIZEX/2, (-1)*BACKGROUND_HEIGHT/2+WINSIZEY/2));
+	//CAMERAMANAGER->SetPosition(Vector2(1000,0));
 
 
 	//GROUND
-	MakeGround(Vector2(0, 444), 4032);
-	MakeGround(Vector2(1007, 1859), 1865);
-	MakeGround(Vector2(50, 1452), 607);
-	MakeGround(Vector2(2975, 1859), 604);
+	MakeGround(Vector2(0, 444), 4032,20);
+	MakeGround(Vector2(1007, 1859), 1865,20);
+	MakeGround(Vector2(50, 1452), 607,20);
+	MakeGround(Vector2(2975, 1859), 604,20);
+	MakeGround(Vector2(2975, 1200), 100,100);
+	MakeGround(Vector2(2672, 1200), 200,100);
+	MakeGround(Vector2(1160, 1200), 150,50);
+	MakeGround(Vector2(1008, 1200), 50,50);
+	MakeGround(Vector2(153, 1859), 200,20);
+	MakeGround(Vector2(1562, 1200), 504,100);
+	MakeGround(Vector2(2168, 1200), 200,100);
+	MakeGround(Vector2(3429, 1403), 604,100);
+	MakeGround(Vector2(1311, 1552), 1363,102);
+	MakeGround(Vector2(3779, 1856), 203,20);
 
-	MakeGround(Vector2(2975, 1200), 100);
-	MakeGround(Vector2(2672, 1200), 200);
-	MakeGround(Vector2(1159, 1200), 150);
-	MakeGround(Vector2(1008, 1200), 50);
-	MakeGround(Vector2(153, 1859), 200);
-	MakeGround(Vector2(1563, 1202), 504);
-	MakeGround(Vector2(2168, 1200), 200);
-	MakeGround(Vector2(3429, 1403), 604);
-	MakeGround(Vector2(1311, 1552), 1363);
-	MakeGround(Vector2(3779, 1856), 203);
+	//WALL 
+	MakeGround(Vector2(3325-20, 948), 20, 706);
+	MakeGround(Vector2(3075, 948), 20, 706);
+	MakeGround(Vector2(49-20, 1151), 20, 304);
+	MakeGround(Vector2(656, 1150), 20, 304);
+	MakeGround(Vector2(102+52, 1654), 20, 205);
+	MakeGround(Vector2(353, 1654), 20, 205);
+	MakeGround(Vector2(27, 38), 20, 409);
+	MakeGround(Vector2(1006-20, 948), 20, 708);
+	MakeGround(Vector2(1260, 1250), 50, 404);
+	MakeGround(Vector2(2672, 1300), 50, 355);
+	MakeGround(Vector2(3730, 0), 100, 292);
+	MakeGround(Vector2(3680, 948), 100, 303);
+	MakeGround(Vector2(3024, 1655), 301, 50);
+	MakeGround(Vector2(4027, 948), 5, 454);
+	MakeGround(Vector2(4027, 40), 5, 406);
+	MakeGround(Vector2(3982, 1503), 20, 354);
+	MakeGround(Vector2(1210, 92), 50, 150);
+	MakeGround(Vector2(1360, 92), 50, 150);
+
 
 
 	//SWITCH

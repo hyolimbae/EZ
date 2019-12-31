@@ -61,5 +61,21 @@ public:
 			_ground->GetTransform()->GetSize().y*BACKGROUND_SCALE));
 	}
 
+	void MakeGround(Vector2 pos, float width, float height)
+	{
+		auto _ground = (GameObject*)new Ground();
+		_ground->SetTag("Ground");
+		_ground->GetTransform()->SetSize(Vector2(width, height));
+		_ground->GetTransform()->SetPosition(Hyolim_LeftTop(pos,
+			_ground->GetTransform()->GetSize().x*BACKGROUND_SCALE,
+			_ground->GetTransform()->GetSize().y*BACKGROUND_SCALE));
+
+		AddChild(_ground);
+		_ground->GetPhysics()->SetBodyType(b2_staticBody);
+		_ground->GetPhysics()->SetBody(PHYSICSMANAGER->CreateDefaultBody(_ground,
+			_ground->GetTransform()->GetSize().x*BACKGROUND_SCALE,
+			_ground->GetTransform()->GetSize().y*BACKGROUND_SCALE));
+	}
+
 };
 
