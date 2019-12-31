@@ -75,6 +75,7 @@ void gameNode::Release()
 
 void gameNode::Update()
 {
+	Object::Update();
 	KEYMANAGER->Update();
 	PHYSICSMANAGER->Update();
 	CAMERAMANAGER->Update();

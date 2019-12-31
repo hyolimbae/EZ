@@ -1,5 +1,6 @@
 #pragma once
 #include "gameNode.h"
+
 #include "Grinder.h"
 #include "ElectricBox.h"
 #include "ElectricRod.h"
@@ -24,9 +25,7 @@ public:
 	playGround();
 	~playGround();
 
-
 	virtual HRESULT Init() override;	
-
 
 	//Æ÷Åä¼¥ ÁÂÇ¥ -> °ÔÀÓ ÁÂÇ¥
 	Vector2 Hyolim_Center(Vector2 vec)
@@ -45,22 +44,6 @@ public:
 		return temp;
 	}
 
-	void MakeGround(Vector2 pos, float width)
-	{
-		auto _ground = (GameObject*)new Ground();
-		_ground->SetTag("Ground");
-		_ground->GetTransform()->SetSize(Vector2(width, 20));
-		_ground->GetTransform()->SetPosition(Hyolim_LeftTop(pos,
-			_ground->GetTransform()->GetSize().x*BACKGROUND_SCALE,
-			_ground->GetTransform()->GetSize().y*BACKGROUND_SCALE));
-
-		AddChild(_ground);
-		_ground->GetPhysics()->SetBodyType(b2_staticBody);
-		_ground->GetPhysics()->SetBody(PHYSICSMANAGER->CreateDefaultBody(_ground,
-			_ground->GetTransform()->GetSize().x*BACKGROUND_SCALE,
-			_ground->GetTransform()->GetSize().y*BACKGROUND_SCALE));
-	}
-
 	void MakeGround(Vector2 pos, float width, float height)
 	{
 		auto _ground = (GameObject*)new Ground();
@@ -75,6 +58,21 @@ public:
 		_ground->GetPhysics()->SetBody(PHYSICSMANAGER->CreateDefaultBody(_ground,
 			_ground->GetTransform()->GetSize().x*BACKGROUND_SCALE,
 			_ground->GetTransform()->GetSize().y*BACKGROUND_SCALE));
+	}
+
+	void MakeZWall(string sprite,Vector2 pos, float width, float height)
+	{
+		auto _zWall = new GameObject();
+		_zWall->SetTag("zWall");
+		_zWall->SetSprite(IMAGEMANAGER->FindImage(sprite));
+		_zWall->GetTransform()->SetScale(BACKGROUND_SCALE);
+		_zWall->GetTransform()->SetSize(Vector2(width, height));
+		_zWall->GetTransform()->SetPosition(Hyolim_LeftTop(pos,
+			_zWall->GetTransform()->GetSize().x*BACKGROUND_SCALE,
+			_zWall->GetTransform()->GetSize().y*BACKGROUND_SCALE));
+
+		_zWall->SetZOrder(5);
+		AddChild(_zWall);
 	}
 
 };

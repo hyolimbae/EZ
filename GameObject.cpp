@@ -45,6 +45,7 @@ void GameObject::SetCollisionExitFunc(function<void(GameObject*, GameObject*)> e
 
 void GameObject::Update()
 {
+	Object::Update();
 	if (!_sprite || !_sprite->IsFrameImage())
 		return;
 	_count++;

@@ -16,22 +16,29 @@ HRESULT playGround::Init()
 {
 	gameNode::Init(true);
 
-	//IMAGE - ITEM (나중에 생성자 쪽으로 옮길까?
-	IMAGEMANAGER->AddFrameImage("Grinder", L"Grinder.png", 3, 1);
-	IMAGEMANAGER->AddFrameImage("ElectricBox", L"ElectricBox.png", 6, 1);
-	IMAGEMANAGER->AddFrameImage("ElectricRod", L"ElectricRod.png", 3, 1);
-	IMAGEMANAGER->AddFrameImage("BrokenWall_Frame", L"wallBroken.png", 13, 1);
-	IMAGEMANAGER->AddImage("BrokenWallStart", L"wallBroken_1.png");
-	IMAGEMANAGER->AddImage("BrokenWallEnd", L"wallBroken_2.png");
-
-	IMAGEMANAGER->AddImage("KeyHole", L"Keyhole.png");
-	IMAGEMANAGER->AddImage("ElectricRodEnd", L"ElectricRod_End.png");
-	IMAGEMANAGER->AddImage("Background", L"Background.png");
+	//IMAGE - OBSTACLE
+	IMAGEMANAGER->AddFrameImage("Grinder", L"Image/Grinder.png", 3, 1);
+	IMAGEMANAGER->AddFrameImage("ElectricBox", L"Image/ElectricBox.png", 6, 1);
+	IMAGEMANAGER->AddFrameImage("ElectricRod", L"Image/ElectricRod.png", 3, 1);
+	IMAGEMANAGER->AddFrameImage("BrokenWall_Frame", L"Image/wallBroken.png", 13, 1);
+	IMAGEMANAGER->AddImage("BrokenWallStart", L"Image/wallBroken_1.png");
+	IMAGEMANAGER->AddImage("BrokenWallEnd", L"Image/wallBroken_2.png");
+	IMAGEMANAGER->AddImage("KeyHole", L"Image/Keyhole.png");
+	IMAGEMANAGER->AddImage("ElectricRodEnd", L"Image/ElectricRod_End.png");
 	
 	//IMAGE - ERIC 
-	IMAGEMANAGER->AddFrameImage("Erik_Idle", L"Erik_idle_02.png", 2, 1);
-	IMAGEMANAGER->AddFrameImage("Erik_Grinder", L"Erik_Grinder2.png", 9, 1);
-	IMAGEMANAGER->AddFrameImage("Erik_Electric", L"Erik_Electric.png", 2, 1);
+	IMAGEMANAGER->AddFrameImage("Erik_Idle", L"Image/Erik_idle_02.png", 2, 1);
+	IMAGEMANAGER->AddFrameImage("Erik_Grinder", L"Image/Erik_Grinder2.png", 9, 1);
+	IMAGEMANAGER->AddFrameImage("Erik_Electric", L"Image/Erik_Electric.png", 2, 1);
+
+	//IMAGE - ETC
+	IMAGEMANAGER->AddImage("Background", L"Image/Background.png");
+	IMAGEMANAGER->AddImage("Wall_z1", L"Image/wall_z1.png");
+	IMAGEMANAGER->AddImage("Wall_z2", L"Image/wall_z2.png");
+	IMAGEMANAGER->AddImage("Wall_z3", L"Image/wall_z3.png");
+
+	MakeZWall("Wall_z1", Vector2(756-50, 92), 50, 352);
+
 
 	auto _background = new GameObject();
 	_background->SetSprite(IMAGEMANAGER->FindImage("Background"));
@@ -81,6 +88,15 @@ HRESULT playGround::Init()
 	MakeGround(Vector2(3982, 1503), 20, 354);
 	MakeGround(Vector2(1210, 92), 50, 150);
 	MakeGround(Vector2(1360, 92), 50, 150);
+
+	//Z-WALL
+	//MakeZWall("Wall_z1", Vector2(756, 92), 50, 352);
+	MakeZWall("Wall_z2", Vector2(1664, 1300), 50, 252);
+	MakeZWall("Wall_z2", Vector2(2218, 1300), 50, 252);
+	MakeZWall("Wall_z3", Vector2(1260, 1654), 50, 202);
+	MakeZWall("Wall_z3", Vector2(1764, 1654), 50, 202);
+	MakeZWall("Wall_z3", Vector2(2218, 1654), 50, 202);
+	MakeZWall("Wall_z3", Vector2(2672, 1654), 50, 202);
 
 
 
@@ -224,7 +240,6 @@ HRESULT playGround::Init()
 		_brokenWall->GetTransform()->GetSize().x*BACKGROUND_SCALE,
 		_brokenWall->GetTransform()->GetSize().y*BACKGROUND_SCALE));
 	_brokenWall->SetSprite(IMAGEMANAGER->FindImage("BrokenWallStart"));
-
 
 	AddChild(_brokenWall);
 	_brokenWall->GetPhysics()->SetBodyType(b2_staticBody);
