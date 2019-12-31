@@ -8,11 +8,12 @@
 #include "KeyHole.h"
 #include "Switch.h"
 #include "Exit.h"
+#include "Lift.h"
+#include "Door.h"
+#include "GravityZone.h"
+#include "Teleport.h"
+#include "Ladder.h"
 
-
-#define BACKGROUND_SCALE 0.2
-#define BACKGROUND_WIDTH 4032 *BACKGROUND_SCALE
-#define BACKGROUND_HEIGHT 2000 *BACKGROUND_SCALE
 
 using namespace std;
 
@@ -37,13 +38,14 @@ public:
 		return temp;
 	}
 
-	Vector2 Hyolim_LeftTop(Vector2 vec, float width, float height)
+	static Vector2 Hyolim_LeftTop(Vector2 vec, float width, float height)
 	{
 		Vector2 temp;
 		temp.x = (vec.x) * BACKGROUND_SCALE + width /  2  - BACKGROUND_WIDTH / 2;
 		temp.y = (vec.y) * BACKGROUND_SCALE + height / 2 - BACKGROUND_HEIGHT / 2;
 		return temp;
 	}
+
 
 	void MakeGround(Vector2 pos, float width)
 	{
