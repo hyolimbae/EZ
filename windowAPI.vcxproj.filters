@@ -174,6 +174,21 @@
     <ClInclude Include="Ground.h">
       <Filter>playGround\obstacle</Filter>
     </ClInclude>
+    <ClInclude Include="Lift.h">
+      <Filter>playGround\obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="Door.h">
+      <Filter>playGround\obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="GravityZone.h">
+      <Filter>playGround\obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="Teleport.h">
+      <Filter>playGround\obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="Ladder.h">
+      <Filter>playGround\obstacle</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -276,6 +291,21 @@
       <Filter>playGround\obstacle</Filter>
     </ClCompile>
     <ClCompile Include="Ground.cpp">
+      <Filter>playGround\obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="Lift.cpp">
+      <Filter>playGround\obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="Door.cpp">
+      <Filter>playGround\obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="GravityZone.cpp">
+      <Filter>playGround\obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="Teleport.cpp">
+      <Filter>playGround\obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="Ladder.cpp">
       <Filter>playGround\obstacle</Filter>
     </ClCompile>
   </ItemGroup>

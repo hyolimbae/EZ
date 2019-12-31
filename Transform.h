@@ -30,6 +30,8 @@ public:
 
 	//Setter 
 	void SetPosition(Vector2 pos) { _position = pos; }
+	void SetPosX(float posX) { _position.x = posX; }
+	void SetPosY(float posY) { _position.y = posY; }
 	void SetScale(float scale) { _scale = scale; }
 	void SetRotation(float rotation) { _rotation = rotation; }
 	void SetSize(Vector2 size) { _size = size; }

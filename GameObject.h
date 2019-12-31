@@ -39,6 +39,8 @@ public:
 	GameObject();
 
 
+
+
 	virtual void Render() override;
 	virtual void Update() override;
 	virtual void Release() override;

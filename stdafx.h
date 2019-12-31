@@ -52,6 +52,10 @@ using namespace SEVENTEEN_UTIL;
 #include "Box2D/Box2D.h"
 #pragma comment(lib, "lib/x86_64/Debug/Box2D.lib")
 
+#define BACKGROUND_SCALE 0.2
+#define BACKGROUND_WIDTH 4032 *BACKGROUND_SCALE
+#define BACKGROUND_HEIGHT 2000 *BACKGROUND_SCALE
+
 #define Deg2Rad PI/180.f
 #define Rad2Deg 180.f/PI
 
