@@ -1,37 +1,38 @@
 #include "stdafx.h"
 #include "Character.h"
-
-
-Character::Character()
-{
-	_physics = new Physics();
-}
-
-
-Character::~Character()
-{
-}
+#include "IdleState.h"
+#include "State.h"
 
 HRESULT Character::Init()
 {
+
+	_state = new IdleState(this);
+	_state->EnterState();
+	
 	return S_OK;
+}
+
+void Character::Release()
+{
 }
 
 void Character::Update()
 {
 	GameObject::Update();
+	_state->UpdateState();
+}
 
+void Character::ChangeState(State* state)
+{
+	_state->ExitState();
+	_state = state;
+	state->EnterState();
+}
 
-	if (_hp > 0)
-	{
-		if (KEYMANAGER->IsStayKeyDown(VK_LEFT))
-		{
-			GetTransform()->SetPosition(GetTransform()->GetPosition() - Vector2(2, 0));
-		}
-		else if (KEYMANAGER->IsStayKeyDown(VK_RIGHT))
-		{
-			GetTransform()->SetPosition(GetTransform()->GetPosition() + Vector2(2, 0));
-		}
-	}
-	
+void Character::SetOnGround()
+{
+}
+
+void Character::GetOnGround()
+{
 }

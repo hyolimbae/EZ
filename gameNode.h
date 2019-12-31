@@ -1,7 +1,6 @@
 #pragma once
 #include "Object.h"
 #include "image.h"
-#include <string>
 
 class b2World;
 class gameNode : public Object

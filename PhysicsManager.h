@@ -41,12 +41,12 @@ public:
 	void SetBodyPosition();
 	static void IgnoreCollision(GameObject* obj1, GameObject* obj2);
 
-	
 
 	//contact
 	virtual void BeginContact(b2Contact* contact) override;
 	virtual void EndContact(b2Contact* contact) override;
-	virtual void PostSolve(b2Contact* contact, const b2ContactImpulse* impulse) override;
+	virtual void PreSolve(b2Contact* contact, const b2Manifold* manifold) override;
+
 
 
 	void SetWorld(b2World* world);

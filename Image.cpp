@@ -1,6 +1,5 @@
 #include "stdafx.h"
 #include "image.h"
-#include "Matrix3x3.h"
 
 ID2D1HwndRenderTarget*  Image::_RT = nullptr;
 
@@ -57,8 +56,8 @@ HRESULT Image::Init(ID2D1Bitmap * bitmap, tagLoadedImageInfo loadinfo, int maxfr
 		}
 	}
 
-	_maxFrameX = maxframeX;
-	_maxFrameY = maxframeY;
+	_maxFrameX = maxframeX -1 ;
+	_maxFrameY = maxframeY -1 ;
 
 	return S_OK;
 }
@@ -87,7 +86,7 @@ Vector2 Image::GetPivotPosition(int x, int y, Pivot::Enum pivot)
 {
 	if (pivot == Pivot::LEFT_TOP) return Vector2(x, y);
 
-	Vector2 pos = Vector2(x, y);
+	Vector2 pos = Vector2(x,y);
 
 	switch (pivot)
 	{
@@ -185,33 +184,7 @@ void Image::Render(int x, int y, Pivot::Enum pivot, bool isRelativePos)
 	}
 
 	//BE AWARE: matrix multiplication is not commutative
-	Transform* cameraTransform = CameraManager::getSingleton()->GetTransfrom();
-	Matrix3x3 cameraScale =
-		Matrix3x3
-		(
-			cameraTransform->GetScale(), 0, 0,
-			0, cameraTransform->GetScale(), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 cameraRotate =
-		Matrix3x3
-		(
-			cos(cameraTransform->GetRotation()), -sin(cameraTransform->GetRotation()), 0,
-			sin(cameraTransform->GetRotation()), cos(cameraTransform->GetRotation()), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 cameraTranslate =
-		Matrix3x3
-		(
-			1, 0, 0,
-			0, 1, 0,
-			cameraTransform->GetPosition().x, cameraTransform->GetPosition().y, 1
-		);
-
-	Matrix3x3 result = cameraScale * cameraRotate * cameraTranslate;
-	_RT->SetTransform(D2D1::Matrix3x2F::Identity() * scale* flip *rotation *translation * result.To_D2D1_Matrix_3x2_F());
+	_RT->SetTransform(D2D1::Matrix3x2F::Identity() * scale* flip *rotation *translation);
 	//_RT->SetTransform(D2D1::Matrix3x2F::Identity() * flip *rotation *translation);
 	_RT->DrawBitmap(_bitmap, dxArea, _alpha);
 
@@ -224,23 +197,19 @@ void Image::Render(int x, int y, Pivot::Enum pivot, bool isRelativePos)
 
 }
 
-void Image::FrameRender(int x, int y, int frameX, Pivot::Enum pivot, bool isRelativePos)
+void Image::FrameRender(int x, int y, int frameX, int frameY, Pivot::Enum pivot, bool isRelativePos)
 {
-	int frame = frameX;
+	int frame = frameY * _maxFrameX + frameX;
 	_size = GetFrameSize(frame);
 
+	_size.x = _size.x;
+	_size.y = _size.y;
 
-	_size.x = _size.x*_scale.x;
-	_size.y = _size.y*_scale.y;
-
+	D2D1::Matrix3x2F rotation = D2D1::Matrix3x2F::Rotation(_angle, D2D1::Point2F());
+	D2D1::Matrix3x2F trans = D2D1::Matrix3x2F::Translation(x, y);
 	D2D1::Matrix3x2F flip = D2D1::Matrix3x2F::Identity();
 	if (_flipX) flip._11 = -1;
 	if (_flipY) flip._22 = -1;
-
-
-	D2D1::Matrix3x2F rotaion = D2D1::Matrix3x2F::Rotation(_angle, D2D1::Point2F());
-	D2D1::Matrix3x2F trans = D2D1::Matrix3x2F::Translation(x, y);
-
 
 	D2D1_RECT_F dxArea;
 	switch (pivot)
@@ -262,39 +231,11 @@ void Image::FrameRender(int x, int y, int frameX, Pivot::Enum pivot, bool isRela
 	}
 	D2D1_RECT_F dxSrc = D2D1::RectF(_frameInfo[frame].X, _frameInfo[frame].Y,
 		_frameInfo[frame].X + _frameInfo[frame].Width, _frameInfo[frame].Y + _frameInfo[frame].Height);
-	Transform* cameraTransform = CameraManager::getSingleton()->GetTransfrom();
-	Matrix3x3 cameraScale =
-		Matrix3x3
-		(
-			cameraTransform->GetScale(), 0, 0,
-			0, cameraTransform->GetScale(), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 cameraRotate =
-		Matrix3x3
-		(
-			cos(cameraTransform->GetRotation()), -sin(cameraTransform->GetRotation()), 0,
-			sin(cameraTransform->GetRotation()), cos(cameraTransform->GetRotation()), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 cameraTranslate =
-		Matrix3x3
-		(
-			1, 0, 0,
-			0, 1, 0,
-			cameraTransform->GetPosition().x, cameraTransform->GetPosition().y, 1
-		);
-
-	Matrix3x3 result = cameraScale * cameraRotate * cameraTranslate;
-	_RT->SetTransform(D2D1::Matrix3x2F::Identity()* flip* rotaion * trans * result.To_D2D1_Matrix_3x2_F());
+	_RT->SetTransform(D2D1::Matrix3x2F::Identity()* rotation*flip * trans);
 	_RT->DrawBitmap(_bitmap, dxArea, _alpha, D2D1_BITMAP_INTERPOLATION_MODE_LINEAR, &dxSrc);
-
 
 	_RT->SetTransform(D2D1::Matrix3x2F::Identity());
 
-	//옵션초기화
 	ResetRenderOption();
 
 }

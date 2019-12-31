@@ -21,5 +21,5 @@ void Animation::Update()
 
 void Animation::Render()
 {
-	_image->FrameRender(_transform->GetPosition().x, _transform->GetPosition().y, _currentPosition.x, Pivot::CENTER);
+	_image->FrameRender(_transform->GetPosition().x, _transform->GetPosition().y, _currentPosition.x, _currentPosition.y, Pivot::CENTER);
 }

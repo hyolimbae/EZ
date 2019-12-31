@@ -5,6 +5,10 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
     <Filter Include="리소스 파일">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -42,32 +46,31 @@
     <Filter Include="playGround\object">
       <UniqueIdentifier>{2f0953bc-0647-4b83-a4b1-19338f4eb879}</UniqueIdentifier>
     </Filter>
-    <Filter Include="playGround\obstacle">
-      <UniqueIdentifier>{53693ca7-089f-4187-9458-f5a9c3acb1a5}</UniqueIdentifier>
+    <Filter Include="playGround\State">
+      <UniqueIdentifier>{48242708-3698-4a99-8abc-2f631008e66e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="playGround\character">
-      <UniqueIdentifier>{2240800b-8319-428d-bf74-9b951ca48096}</UniqueIdentifier>
+    <Filter Include="playGround\Obstacle">
+      <UniqueIdentifier>{a3818130-e8ac-42f1-90f8-3f0b4a025035}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\헤더 파일">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="playGround\Character">
+      <UniqueIdentifier>{78fae528-d1d0-45dc-b2bf-fbb6823578da}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
-      <Filter>소스 파일\헤더 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>소스 파일\헤더 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Resource.h">
-      <Filter>소스 파일\헤더 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="windowAPI.h">
-      <Filter>소스 파일\헤더 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="commonMacroFunction.h">
-      <Filter>소스 파일\헤더 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="gameNode.h">
       <Filter>2DGameFramework</Filter>
@@ -79,7 +82,7 @@
       <Filter>2DGameFramework\SingletonBase</Filter>
     </ClInclude>
     <ClInclude Include="randomFunction.h">
-      <Filter>소스 파일\헤더 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="utils.h">
       <Filter>2DGameFramework\Util</Filter>
@@ -147,47 +150,41 @@
     <ClInclude Include="Animation.h">
       <Filter>2DGameFramework\animation</Filter>
     </ClInclude>
-    <ClInclude Include="Grinder.h">
-      <Filter>playGround\obstacle</Filter>
+    <ClInclude Include="State.h">
+      <Filter>playGround\State</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveState.h">
+      <Filter>playGround\State</Filter>
+    </ClInclude>
+    <ClInclude Include="IdleState.h">
+      <Filter>playGround\State</Filter>
+    </ClInclude>
+    <ClInclude Include="StopState.h">
+      <Filter>playGround\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Obstacle.h">
+      <Filter>playGround\Obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="JumpState.h">
+      <Filter>playGround\State</Filter>
     </ClInclude>
     <ClInclude Include="Character.h">
-      <Filter>playGround\character</Filter>
+      <Filter>playGround\Character</Filter>
     </ClInclude>
-    <ClInclude Include="ElectricBox.h">
-      <Filter>playGround\obstacle</Filter>
+    <ClInclude Include="Olaf.h">
+      <Filter>playGround\Character</Filter>
     </ClInclude>
-    <ClInclude Include="ElectricRod.h">
-      <Filter>playGround\obstacle</Filter>
+    <ClInclude Include="Baleog.h">
+      <Filter>playGround\Character</Filter>
     </ClInclude>
-    <ClInclude Include="BrokenWall.h">
-      <Filter>playGround\obstacle</Filter>
+    <ClInclude Include="Erik.h">
+      <Filter>playGround\Character</Filter>
     </ClInclude>
-    <ClInclude Include="KeyHole.h">
-      <Filter>playGround\obstacle</Filter>
+    <ClInclude Include="Bullet.h">
+      <Filter>playGround</Filter>
     </ClInclude>
-    <ClInclude Include="Exit.h">
-      <Filter>playGround\obstacle</Filter>
-    </ClInclude>
-    <ClInclude Include="Switch.h">
-      <Filter>playGround\obstacle</Filter>
-    </ClInclude>
-    <ClInclude Include="Ground.h">
-      <Filter>playGround\obstacle</Filter>
-    </ClInclude>
-    <ClInclude Include="Lift.h">
-      <Filter>playGround\obstacle</Filter>
-    </ClInclude>
-    <ClInclude Include="Door.h">
-      <Filter>playGround\obstacle</Filter>
-    </ClInclude>
-    <ClInclude Include="GravityZone.h">
-      <Filter>playGround\obstacle</Filter>
-    </ClInclude>
-    <ClInclude Include="Teleport.h">
-      <Filter>playGround\obstacle</Filter>
-    </ClInclude>
-    <ClInclude Include="Ladder.h">
-      <Filter>playGround\obstacle</Filter>
+    <ClInclude Include="AtkState.h">
+      <Filter>playGround\State</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -266,47 +263,41 @@
     <ClCompile Include="Animation.cpp">
       <Filter>2DGameFramework\animation</Filter>
     </ClCompile>
-    <ClCompile Include="Grinder.cpp">
-      <Filter>playGround\obstacle</Filter>
+    <ClCompile Include="State.cpp">
+      <Filter>playGround\State</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveState.cpp">
+      <Filter>playGround\State</Filter>
+    </ClCompile>
+    <ClCompile Include="IdleState.cpp">
+      <Filter>playGround\State</Filter>
+    </ClCompile>
+    <ClCompile Include="StopState.cpp">
+      <Filter>playGround\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Obstacle.cpp">
+      <Filter>playGround\Obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="JumpState.cpp">
+      <Filter>playGround\State</Filter>
     </ClCompile>
     <ClCompile Include="Character.cpp">
-      <Filter>playGround\character</Filter>
+      <Filter>playGround\Character</Filter>
     </ClCompile>
-    <ClCompile Include="ElectricBox.cpp">
-      <Filter>playGround\obstacle</Filter>
+    <ClCompile Include="Olaf.cpp">
+      <Filter>playGround\Character</Filter>
     </ClCompile>
-    <ClCompile Include="ElectricRod.cpp">
-      <Filter>playGround\obstacle</Filter>
+    <ClCompile Include="Baleog.cpp">
+      <Filter>playGround\Character</Filter>
     </ClCompile>
-    <ClCompile Include="BrokenWall.cpp">
-      <Filter>playGround\obstacle</Filter>
+    <ClCompile Include="Erik.cpp">
+      <Filter>playGround\Character</Filter>
     </ClCompile>
-    <ClCompile Include="KeyHole.cpp">
-      <Filter>playGround\obstacle</Filter>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>playGround</Filter>
     </ClCompile>
-    <ClCompile Include="Exit.cpp">
-      <Filter>playGround\obstacle</Filter>
-    </ClCompile>
-    <ClCompile Include="Switch.cpp">
-      <Filter>playGround\obstacle</Filter>
-    </ClCompile>
-    <ClCompile Include="Ground.cpp">
-      <Filter>playGround\obstacle</Filter>
-    </ClCompile>
-    <ClCompile Include="Lift.cpp">
-      <Filter>playGround\obstacle</Filter>
-    </ClCompile>
-    <ClCompile Include="Door.cpp">
-      <Filter>playGround\obstacle</Filter>
-    </ClCompile>
-    <ClCompile Include="GravityZone.cpp">
-      <Filter>playGround\obstacle</Filter>
-    </ClCompile>
-    <ClCompile Include="Teleport.cpp">
-      <Filter>playGround\obstacle</Filter>
-    </ClCompile>
-    <ClCompile Include="Ladder.cpp">
-      <Filter>playGround\obstacle</Filter>
+    <ClCompile Include="AtkState.cpp">
+      <Filter>playGround\State</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

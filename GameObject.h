@@ -30,15 +30,12 @@ protected:
 	CollisionCallBack	_callBack;
 
 	Vector2 _currentPosition = Vector2(0, 1);
-	float _deltaTime = 0.3f;
+	float _deltaTime = 0.4f;
 	bool _loop;
 	int _count = 0;
-	int _zOrder = 0;
 public:
 
 	GameObject();
-
-
 
 
 	virtual void Render() override;
@@ -56,17 +53,11 @@ public:
 	Image* GetSprite();
 	Physics* GetPhysics() { return _physics; }
 	Transform* GetTransform() { return _transform; }
-	Vector2 getCurrentPosition() { return _currentPosition; }
-	int GetZOrder() { return _zOrder; }
+	Vector2 GetCurrentPosition() { return _currentPosition; }
 
 	//SETTER
 	void SetSprite(Image* sprite);
-	void SetDeltaTime(float deltaTime) { _deltaTime = deltaTime; }
-	void SetCurrentPosition(Vector2 vec) { _currentPosition = vec; }
-	void SetZOrder(int zOrder)
-	{
-		_zOrder = zOrder;
-	}
+
 
 	template <typename T>
 	static GameObject* CreateObject(T, GameObject* parent = nullptr)

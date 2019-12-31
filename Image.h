@@ -23,8 +23,8 @@ private:
 	ID2D1Bitmap*		_bitmap;
 	float				_alpha;			//이미지 투명도
 
-	Vector2				_size;			//이미지 크기
-	Vector2				_scale;			//x,y 크기 확대,축소 배율
+	Vector2			_size;			//이미지 크기
+	Vector2		_scale;			//x,y 크기 확대,축소 배율
 	float				_angle;
 
 	tagLoadedImageInfo	_loadInfo;		//이미지 로드 정보
@@ -64,7 +64,7 @@ public:
 
 	//랜더
 	void Render(int x, int y, Pivot::Enum pivot = Pivot::LEFT_TOP, bool isRelativePos = TRUE);
-	void FrameRender(int x, int y, int frameX, Pivot::Enum pivot = Pivot::LEFT_TOP, bool isRelativePos = TRUE);
+	void FrameRender(int x, int y, int frameX, int frameY, Pivot::Enum pivot = Pivot::LEFT_TOP, bool isRelativePos = TRUE);
 
 
 	//옵션
@@ -95,14 +95,13 @@ public:
 	Vector2 GetFrameSize(int frame) { return Vector2(_frameInfo[frame].Width, _frameInfo[frame].Height); }
 	float GetCameraX() { return _cameraX; }
 	float GetCameraY() { return _cameraY; }
+	bool GetFlipX() { return _flipX; }
 
 
 	bool IsFrameImage()
 	{
-		if (_frameInfo.size() == 1) 
-			return false;
-		else if (_frameInfo.size() > 1)
-			return true;
+		if (_frameInfo.size() == 1) return false;
+		else if (_frameInfo.size() > 1)return true;
 	}
 
 	tagLoadedImageInfo GetLoadInfo() { return _loadInfo; }

@@ -1,7 +1,6 @@
 #include "stdafx.h"
 #include "ImageManager.h"
-#include "Matrix3x3.h"
-#include "Transform.h"
+
 HRESULT ImageManager::Init()
 {
 	//D2D ÆÑÅä¸® »ý¼º
@@ -37,7 +36,7 @@ Image * ImageManager::AddImage(string key, wstring file, bool usePixelCollision)
 {
 	Image* img = FindImage(key);
 
-	if (img)
+	if (img)  
 		return img;
 
 	ID2D1Bitmap* bitmap = createD2DBitmapFromFile(file);
@@ -89,12 +88,14 @@ void ImageManager::DeleteImage(string key)
 
 void ImageManager::DeleteAll()
 {
+
 	for (mapImageIter iter = _imageList.begin(); iter != _imageList.end(); ++iter)
 	{
 		iter->second->Release();
 		delete iter->second;
 		iter->second = NULL;
 	}
+
 	_imageList.clear();
 
 }
@@ -370,74 +371,28 @@ void ImageManager::drawLine(D2D1::ColorF::Enum color, float alpha, Vector2 start
 	ID2D1SolidColorBrush* brush;
 	_RenderTarget->CreateSolidColorBrush(D2D1::ColorF(color, alpha), &brush);
 
-	Transform* cameraTransform = CameraManager::getSingleton()->GetTransfrom();
-	Matrix3x3 scale =
-		Matrix3x3
-		(
-			cameraTransform->GetScale(), 0, 0,
-			0, cameraTransform->GetScale(), 0,
-			0, 0, 1
-		);
+	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
 
-	Matrix3x3 rotate =
-		Matrix3x3
-		(
-			cos(cameraTransform->GetRotation()), -sin(cameraTransform->GetRotation()), 0,
-			sin(cameraTransform->GetRotation()), cos(cameraTransform->GetRotation()), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 translate =
-		Matrix3x3
-		(
-			1, 0, 0,
-			0, 1, 0,
-			cameraTransform->GetPosition().x, cameraTransform->GetPosition().y, 1
-		);
-
-	Matrix3x3 result = scale * rotate * translate;
-
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity() * result.To_D2D1_Matrix_3x2_F());
-
+	/*if (isRelativePos)
+	{
+		start = CAMERA->getRelativeVector2D(start);
+		end = CAMERA->getRelativeVector2D(end);
+	}
+		*/
 	_RenderTarget->DrawLine(D2D1::Point2F(start.x, start.y), D2D1::Point2F(end.x, end.y), brush, strokeWidth);
 
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
 	brush->Release();
 }
 void ImageManager::drawLine(Vector2 start, Vector2 end, DefaultBrush::Enum defaultBrush, float strokeWidth)
 {
-	Transform* cameraTransform = CameraManager::getSingleton()->GetTransfrom();
-	Matrix3x3 scale =
-		Matrix3x3
-		(
-			cameraTransform->GetScale(), 0, 0,
-			0, cameraTransform->GetScale(), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 rotate =
-		Matrix3x3
-		(
-			cos(cameraTransform->GetRotation()), -sin(cameraTransform->GetRotation()), 0,
-			sin(cameraTransform->GetRotation()), cos(cameraTransform->GetRotation()), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 translate =
-		Matrix3x3
-		(
-			1, 0, 0,
-			0, 1, 0,
-			cameraTransform->GetPosition().x, cameraTransform->GetPosition().y, 1
-		);
-
-	Matrix3x3 result = scale * rotate * translate;
-
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity() * result.To_D2D1_Matrix_3x2_F());
+	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
+	/*if (isRelativePos)
+	{
+		start = CAMERA->getRelativeVector2D(start);
+		end = CAMERA->getRelativeVector2D(end);
+	}*/
 
 	_RenderTarget->DrawLine(D2D1::Point2F(start.x, start.y), D2D1::Point2F(end.x, end.y), _dwDefaultBrush[defaultBrush], strokeWidth);
-
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
 }
 
 void ImageManager::DrawRectangle(RECT rc, D2D1::ColorF::Enum color, float alpha, bool isRelativePos, float strokeWidth)
@@ -445,34 +400,7 @@ void ImageManager::DrawRectangle(RECT rc, D2D1::ColorF::Enum color, float alpha,
 	ID2D1SolidColorBrush* brush;
 	_RenderTarget->CreateSolidColorBrush(D2D1::ColorF(color, alpha), &brush);
 
-	Transform* cameraTransform = CameraManager::getSingleton()->GetTransfrom();
-	Matrix3x3 scale =
-		Matrix3x3
-		(
-			cameraTransform->GetScale(), 0, 0,
-			0, cameraTransform->GetScale(), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 rotate =
-		Matrix3x3
-		(
-			cos(cameraTransform->GetRotation()), -sin(cameraTransform->GetRotation()), 0,
-			sin(cameraTransform->GetRotation()), cos(cameraTransform->GetRotation()), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 translate =
-		Matrix3x3
-		(
-			1, 0, 0,
-			0, 1, 0,
-			cameraTransform->GetPosition().x, cameraTransform->GetPosition().y, 1
-		);
-
-	Matrix3x3 result = scale * rotate * translate;
-
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity() * result.To_D2D1_Matrix_3x2_F());
+	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
 
 	//if (isRelativePos)
 	//{
@@ -480,39 +408,12 @@ void ImageManager::DrawRectangle(RECT rc, D2D1::ColorF::Enum color, float alpha,
 	//}
 
 	_RenderTarget->DrawRectangle(D2D1::RectF(rc.left, rc.top, rc.right, rc.bottom), brush, strokeWidth);
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
+
 	brush->Release();
 }
 void ImageManager::DrawRectangle(RECT rc, DefaultBrush::Enum defaultBrush, bool isRelativePos, float strokeWidth)
 {
-	Transform* cameraTransform = CameraManager::getSingleton()->GetTransfrom();
-	Matrix3x3 scale =
-		Matrix3x3
-		(
-			cameraTransform->GetScale(), 0, 0,
-			0, cameraTransform->GetScale(), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 rotate =
-		Matrix3x3
-		(
-			cos(cameraTransform->GetRotation()), -sin(cameraTransform->GetRotation()), 0,
-			sin(cameraTransform->GetRotation()), cos(cameraTransform->GetRotation()), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 translate =
-		Matrix3x3
-		(
-			1, 0, 0,
-			0, 1, 0,
-			cameraTransform->GetPosition().x, cameraTransform->GetPosition().y, 1
-		);
-
-	Matrix3x3 result = scale * rotate * translate;
-
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity() * result.To_D2D1_Matrix_3x2_F());
+	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
 
 	//if (isRelativePos)
 	//{
@@ -520,7 +421,6 @@ void ImageManager::DrawRectangle(RECT rc, DefaultBrush::Enum defaultBrush, bool 
 	//}
 
 	_RenderTarget->DrawRectangle(D2D1::RectF(rc.left, rc.top, rc.right, rc.bottom), _dwDefaultBrush[defaultBrush], strokeWidth);
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
 }
 
 void ImageManager::DrawEllipse(RECT rc, D2D1::ColorF::Enum color, float alpha, bool isRelativePos, float strokeWidth)
@@ -542,37 +442,9 @@ void ImageManager::DrawEllipse(RECT rc, D2D1::ColorF::Enum color, float alpha, b
 	ellipse.radiusX = width * 0.5;
 	ellipse.radiusY = height * 0.5;
 
-
-	Transform* cameraTransform = CameraManager::getSingleton()->GetTransfrom();
-	Matrix3x3 scale =
-		Matrix3x3
-		(
-			cameraTransform->GetScale(), 0, 0,
-			0, cameraTransform->GetScale(), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 rotate =
-		Matrix3x3
-		(
-			cos(cameraTransform->GetRotation()), -sin(cameraTransform->GetRotation()), 0,
-			sin(cameraTransform->GetRotation()), cos(cameraTransform->GetRotation()), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 translate =
-		Matrix3x3
-		(
-			1, 0, 0,
-			0, 1, 0,
-			cameraTransform->GetPosition().x, cameraTransform->GetPosition().y, 1
-		);
-
-	Matrix3x3 result = scale * rotate * translate;
-
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity() * result.To_D2D1_Matrix_3x2_F());
-	_RenderTarget->DrawEllipse(&ellipse, brush, strokeWidth);
 	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
+	_RenderTarget->DrawEllipse(&ellipse, brush, strokeWidth);
+
 	brush->Release();
 }
 
@@ -592,38 +464,8 @@ void ImageManager::DrawEllipse(RECT rc, DefaultBrush::Enum defaultBrush, bool is
 	ellipse.radiusX = width * 0.5;
 	ellipse.radiusY = height * 0.5;
 
-
-	Transform* cameraTransform = CameraManager::getSingleton()->GetTransfrom();
-	Matrix3x3 scale =
-		Matrix3x3
-		(
-			cameraTransform->GetScale(), 0, 0,
-			0, cameraTransform->GetScale(), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 rotate =
-		Matrix3x3
-		(
-			cos(cameraTransform->GetRotation()), -sin(cameraTransform->GetRotation()), 0,
-			sin(cameraTransform->GetRotation()), cos(cameraTransform->GetRotation()), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 translate =
-		Matrix3x3
-		(
-			1, 0, 0,
-			0, 1, 0,
-			cameraTransform->GetPosition().x, cameraTransform->GetPosition().y, 1
-		);
-
-	Matrix3x3 result = scale * rotate * translate;
-
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity() * result.To_D2D1_Matrix_3x2_F());
-
-	_RenderTarget->DrawEllipse(&ellipse, _dwDefaultBrush[defaultBrush], strokeWidth);
 	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
+	_RenderTarget->DrawEllipse(&ellipse, _dwDefaultBrush[defaultBrush], strokeWidth);
 }
 
 void ImageManager::FillRectangle(RECT rc, D2D1::ColorF::Enum color, float alpha, bool isRelativePos)
@@ -631,37 +473,7 @@ void ImageManager::FillRectangle(RECT rc, D2D1::ColorF::Enum color, float alpha,
 	ID2D1SolidColorBrush* brush;
 	_RenderTarget->CreateSolidColorBrush(D2D1::ColorF(color, alpha), &brush);
 
-	Transform* cameraTransform = CameraManager::getSingleton()->GetTransfrom();
-
-
-
-	Matrix3x3 scale =
-		Matrix3x3
-		(
-			cameraTransform->GetScale(), 0, 0,
-			0, cameraTransform->GetScale(), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 rotate =
-		Matrix3x3
-		(
-			cos(cameraTransform->GetRotation()), -sin(cameraTransform->GetRotation()), 0,
-			sin(cameraTransform->GetRotation()), cos(cameraTransform->GetRotation()), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 translate =
-		Matrix3x3
-		(
-			1, 0, 0,
-			0, 1, 0,
-			cameraTransform->GetPosition().x, cameraTransform->GetPosition().y, 1
-		);
-
-	Matrix3x3 result = scale * rotate * translate;
-
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity() * result.To_D2D1_Matrix_3x2_F());
+	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
 
 	//if (isRelativePos)
 	//{
@@ -669,46 +481,18 @@ void ImageManager::FillRectangle(RECT rc, D2D1::ColorF::Enum color, float alpha,
 	//}
 
 	_RenderTarget->FillRectangle(D2D1::RectF(rc.left, rc.top, rc.right, rc.bottom), brush);
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
+
 	brush->Release();
 }
 void ImageManager::FillRectangle(RECT rc, DefaultBrush::Enum defaultBrush, bool isRelativePos)
 {
-	Transform* cameraTransform = CameraManager::getSingleton()->GetTransfrom();
-	Matrix3x3 scale =
-		Matrix3x3
-		(
-			cameraTransform->GetScale(), 0, 0,
-			0, cameraTransform->GetScale(), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 rotate =
-		Matrix3x3
-		(
-			cos(cameraTransform->GetRotation()), -sin(cameraTransform->GetRotation()), 0,
-			sin(cameraTransform->GetRotation()), cos(cameraTransform->GetRotation()), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 translate =
-		Matrix3x3
-		(
-			1, 0, 0,
-			0, 1, 0,
-			cameraTransform->GetPosition().x, cameraTransform->GetPosition().y, 1
-		);
-
-	Matrix3x3 result = scale * rotate * translate;
-
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity() * result.To_D2D1_Matrix_3x2_F());
+	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
 	if (isRelativePos)
 	{
 		//rc = CAMERA->getRelativeRECT(rc);
 	}
 
 	_RenderTarget->FillRectangle(D2D1::RectF(rc.left, rc.top, rc.right, rc.bottom), _dwDefaultBrush[defaultBrush]);
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
 }
 
 void ImageManager::FillEllipse(RECT rc, D2D1::ColorF::Enum color, float alpha, bool isRelativePos)
@@ -729,36 +513,8 @@ void ImageManager::FillEllipse(RECT rc, D2D1::ColorF::Enum color, float alpha, b
 	ellipse.radiusX = width * 0.5;
 	ellipse.radiusY = height * 0.5;
 
-	Transform* cameraTransform = CameraManager::getSingleton()->GetTransfrom();
-	Matrix3x3 scale =
-		Matrix3x3
-		(
-			cameraTransform->GetScale(), 0, 0,
-			0, cameraTransform->GetScale(), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 rotate =
-		Matrix3x3
-		(
-			cos(cameraTransform->GetRotation()), -sin(cameraTransform->GetRotation()), 0,
-			sin(cameraTransform->GetRotation()), cos(cameraTransform->GetRotation()), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 translate =
-		Matrix3x3
-		(
-			1, 0, 0,
-			0, 1, 0,
-			cameraTransform->GetPosition().x, cameraTransform->GetPosition().y, 1
-		);
-
-	Matrix3x3 result = scale * rotate * translate;
-
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity()*result.To_D2D1_Matrix_3x2_F());
-	_RenderTarget->FillEllipse(&ellipse, brush);
 	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
+	_RenderTarget->FillEllipse(&ellipse, brush);
 
 	brush->Release();
 }
@@ -778,34 +534,6 @@ void ImageManager::FillEllipse(RECT rc, DefaultBrush::Enum defaultBrush, bool is
 	ellipse.radiusX = width * 0.5;
 	ellipse.radiusY = height * 0.5;
 
-	Transform* cameraTransform = CameraManager::getSingleton()->GetTransfrom();
-	Matrix3x3 scale =
-		Matrix3x3
-		(
-			cameraTransform->GetScale(), 0, 0,
-			0, cameraTransform->GetScale(), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 rotate =
-		Matrix3x3
-		(
-			cos(cameraTransform->GetRotation()), -sin(cameraTransform->GetRotation()), 0,
-			sin(cameraTransform->GetRotation()), cos(cameraTransform->GetRotation()), 0,
-			0, 0, 1
-		);
-
-	Matrix3x3 translate =
-		Matrix3x3
-		(
-			1, 0, 0,
-			0, 1, 0,
-			cameraTransform->GetPosition().x, cameraTransform->GetPosition().y, 1
-		);
-
-	Matrix3x3 result = scale * rotate * translate;
-
-	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity() * result.To_D2D1_Matrix_3x2_F());
-	_RenderTarget->FillEllipse(&ellipse, _dwDefaultBrush[defaultBrush]);
 	_RenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
+	_RenderTarget->FillEllipse(&ellipse, _dwDefaultBrush[defaultBrush]);
 }
