@@ -23,17 +23,14 @@ HRESULT playGround::Init()
 	IMAGEMANAGER->AddFrameImage("BrokenWall_Frame", L"wallBroken.png", 13, 1);
 	IMAGEMANAGER->AddImage("BrokenWallStart", L"wallBroken_1.png");
 	IMAGEMANAGER->AddImage("BrokenWallEnd", L"wallBroken_2.png");
-
 	IMAGEMANAGER->AddImage("KeyHole", L"Keyhole.png");
 	IMAGEMANAGER->AddImage("ElectricRodEnd", L"ElectricRod_End.png");
 	IMAGEMANAGER->AddImage("Background", L"Background.png");
-
 	IMAGEMANAGER->AddImage("Lift", L"Lift.png");
 	IMAGEMANAGER->AddImage("DoorTop", L"DoorTop.png");
 	IMAGEMANAGER->AddImage("DoorBottom", L"DoorBottom.png");
 	
 	//IMAGE - ERIC 
-<<<<<<< .merge_file_a07200
 	IMAGEMANAGER->AddFrameImage("Erik_Idle", L"Image/Erik_idle_02.png", 2, 1);
 	IMAGEMANAGER->AddFrameImage("Erik_Grinder", L"Image/Erik_Grinder2.png", 9, 1);
 	IMAGEMANAGER->AddFrameImage("Erik_Electric", L"Image/Erik_Electric.png", 2, 1);
@@ -44,12 +41,6 @@ HRESULT playGround::Init()
 	IMAGEMANAGER->AddImage("Wall_z2", L"Image/wall_z2.png");
 	IMAGEMANAGER->AddImage("Wall_z3", L"Image/wall_z3.png");
 
-
-=======
-	IMAGEMANAGER->AddFrameImage("Erik_Idle", L"Erik_idle_02.png", 2, 1);
-	IMAGEMANAGER->AddFrameImage("Erik_Grinder", L"Erik_Grinder2.png", 9, 1);
-	IMAGEMANAGER->AddFrameImage("Erik_Electric", L"Erik_Electric.png", 2, 1);
->>>>>>> .merge_file_a14152
 
 	auto _background = new GameObject();
 	_background->SetSprite(IMAGEMANAGER->FindImage("Background"));
@@ -64,7 +55,6 @@ HRESULT playGround::Init()
 
 
 	//GROUND
-<<<<<<< .merge_file_a07200
 	MakeGround(Vector2(0, 444), 4032,20);
 	MakeGround(Vector2(1007, 1859), 1865,20);
 	MakeGround(Vector2(50, 1452), 607,20);
@@ -109,23 +99,6 @@ HRESULT playGround::Init()
 	MakeZWall("Wall_z3", Vector2(2218, 1654), 50, 202);
 	MakeZWall("Wall_z3", Vector2(2672, 1654), 50, 202);
 
-=======
-	MakeGround(Vector2(0, 444), 4032);
-	MakeGround(Vector2(1007, 1859), 1865);
-	MakeGround(Vector2(50, 1452), 607);
-	MakeGround(Vector2(2975, 1859), 604);
-
-	MakeGround(Vector2(2975, 1200), 100);
-	MakeGround(Vector2(2672, 1200), 200);
-	MakeGround(Vector2(1159, 1200), 150);
-	MakeGround(Vector2(1008, 1200), 50);
-	MakeGround(Vector2(153, 1859), 200);
-	MakeGround(Vector2(1563, 1202), 504);
-	MakeGround(Vector2(2168, 1200), 200);
-	MakeGround(Vector2(3429, 1403), 604);
-	MakeGround(Vector2(1311, 1552), 1363);
-	MakeGround(Vector2(3779, 1856), 203);
->>>>>>> .merge_file_a14152
 
 
 	//SWITCH
