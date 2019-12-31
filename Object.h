@@ -13,7 +13,7 @@ protected:
 public:
 	virtual HRESULT Init() { return S_OK; }
 	virtual void Release() {}
-	virtual void Update() {}
+	virtual void Update();
 	virtual void Render() {}
 
 	void SetParent(Object* parent);
