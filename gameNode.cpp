@@ -75,11 +75,12 @@ void gameNode::Release()
 
 void gameNode::Update()
 {
+	Object::Update();
 	KEYMANAGER->Update();
 	PHYSICSMANAGER->Update();
+	CAMERAMANAGER->Update();
 	for (auto c : _children)
 		c->Update();
-	//_physicsWorld->Step(TIMEMANAGER->getWorldTime(), 8, 3);
 }
 
 void gameNode::Render()
@@ -97,7 +98,6 @@ void gameNode::Render()
 	for (auto c : _children)
 		c->Render();
 
-	
 
 	PHYSICSMANAGER->Render();
 

@@ -1,171 +1,340 @@
 ﻿  stdafx.cpp
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\image.h(95): warning C4244: '인수': 'INT'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\transform.h(29): warning C4244: 'return': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\transform.h(30): warning C4244: 'return': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\image.h(95): warning C4244: '인수': 'INT'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\transform.h(28): warning C4244: 'return': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\transform.h(29): warning C4244: 'return': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Animation.cpp
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\animation.cpp(15): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\animation.cpp(24): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  AtkState.cpp
-  Baleog.cpp
-  Bullet.cpp
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\animation.cpp(15): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\animation.cpp(24): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  BrokenWall.cpp
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\brokenwall.cpp(26): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\brokenwall.cpp(32): warning C4305: '인수': 'double'에서 'float32'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\brokenwall.cpp(33): warning C4305: '인수': 'double'에서 'float32'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\brokenwall.cpp(50): warning C4305: '인수': 'double'에서 'float32'(으)로 잘립니다.
   CameraManager.cpp
+  Character.cpp
   DebugDraw.cpp
-  Erik.cpp
+  Door.cpp
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(36): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(37): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(44): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(45): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(56): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(55): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(62): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(61): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(70): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(74): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(73): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\door.cpp(98): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\door.cpp(106): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\door.cpp(118): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\door.cpp(126): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\door.cpp(138): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\door.cpp(146): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\door.cpp(158): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\door.cpp(166): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  ElectricBox.cpp
+  ElectricRod.cpp
+  Exit.cpp
   gameNode.cpp
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\gamenode.cpp(43): warning C4244: '인수': 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\gamenode.cpp(145): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\gamenode.cpp(146): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\gamenode.cpp(43): warning C4244: '인수': 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\gamenode.cpp(145): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\gamenode.cpp(146): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   GameObject.cpp
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\gameobject.cpp(51): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\gameobject.cpp(69): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\gameobject.cpp(71): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  IdleState.cpp
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\gameobject.cpp(54): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\gameobject.cpp(73): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\gameobject.cpp(75): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  GravityZone.cpp
+  Grinder.cpp
+  Ground.cpp
   Image.cpp
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\image.cpp(22): warning C4244: '=': 'float'에서 'INT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\image.cpp(23): warning C4244: '=': 'float'에서 'INT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\image.cpp(43): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\image.cpp(44): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\image.cpp(82): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\image.cpp(87): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\image.cpp(89): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\image.cpp(156): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\image.cpp(209): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\image.cpp(233): warning C4244: '인수': 'INT'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\image.cpp(232): warning C4244: '인수': 'INT'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\image.cpp(23): warning C4244: '=': 'float'에서 'INT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\image.cpp(24): warning C4244: '=': 'float'에서 'INT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\image.cpp(44): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\image.cpp(45): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\image.cpp(83): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\image.cpp(88): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\image.cpp(90): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\image.cpp(157): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\image.cpp(242): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\image.cpp(264): warning C4244: '인수': 'INT'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\image.cpp(263): warning C4244: '인수': 'INT'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   ImageManager.cpp
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(259): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(258): warning C4244: '인수': 'unsigned __int64'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(261): warning C4267: '인수': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(266): warning C4267: '=': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(267): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(272): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(285): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(284): warning C4244: '인수': 'unsigned __int64'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(287): warning C4267: '인수': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(292): warning C4267: '=': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(293): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(302): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(315): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(314): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(317): warning C4267: '인수': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(322): warning C4267: '=': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(323): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(329): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(341): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(340): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(343): warning C4267: '인수': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(348): warning C4267: '=': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(349): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(359): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(410): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(423): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(440): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(441): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(442): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(443): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(462): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(463): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(464): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(465): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(483): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(495): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(511): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(512): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(513): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(514): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(532): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(533): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(534): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\imagemanager.cpp(535): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  JumpState.cpp
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(258): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(257): warning C4244: '인수': 'unsigned __int64'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(260): warning C4267: '인수': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(265): warning C4267: '=': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(266): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(271): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(284): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(283): warning C4244: '인수': 'unsigned __int64'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(286): warning C4267: '인수': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(291): warning C4267: '=': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(292): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(301): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(314): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(313): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(316): warning C4267: '인수': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(321): warning C4267: '=': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(322): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(328): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(340): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(339): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(342): warning C4267: '인수': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(347): warning C4267: '=': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(348): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(358): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(482): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(522): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(540): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(541): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(542): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(543): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(590): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(591): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(592): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(593): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(671): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(710): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(727): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(728): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(729): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(730): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(776): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(777): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(778): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\imagemanager.cpp(779): warning C4244: '=': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  KeyHole.cpp
   KeyManager.cpp
+  Ladder.cpp
+  Lift.cpp
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(36): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(37): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(44): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(45): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(56): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(55): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(62): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(61): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(70): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(74): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(73): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\lift.cpp(75): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\lift.cpp(83): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\image.h(106): warning C4715: 'Image::IsFrameImage': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  컴파일하고 있습니다...
   Matrix2x2.cpp
   Matrix3x3.cpp
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\vector3.h(3): warning C4005: 'Deg2Rad': 매크로 재정의
-  c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\stdafx.h(55): note: 'Deg2Rad'의 이전 정의를 참조하십시오.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\vector3.h(4): warning C4005: 'Rad2Deg': 매크로 재정의
-  c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\stdafx.h(56): note: 'Rad2Deg'의 이전 정의를 참조하십시오.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\matrix3x3.cpp(96): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  MoveState.cpp
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\vector3.h(3): warning C4005: 'Deg2Rad': 매크로 재정의
+  c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\stdafx.h(59): note: 'Deg2Rad'의 이전 정의를 참조하십시오.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\vector3.h(4): warning C4005: 'Rad2Deg': 매크로 재정의
+  c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\stdafx.h(60): note: 'Rad2Deg'의 이전 정의를 참조하십시오.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\matrix3x3.cpp(96): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Object.cpp
-  Obstacle.cpp
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\obstacle.cpp(45): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Olaf.cpp
-  코드를 생성하고 있습니다...
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\image.h(105): warning C4715: 'Image::IsFrameImage': 모든 제어 경로에서 값을 반환하지는 않습니다.
-  컴파일하고 있습니다...
   Physics.cpp
   PhysicsManager.cpp
   playGround.cpp
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(36): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(37): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(44): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(45): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(56): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(55): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(62): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(61): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(70): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(74): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(73): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(49): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(54): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(111): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(110): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(116): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(115): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(124): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(123): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(129): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(128): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(137): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(136): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(142): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(141): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(149): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(148): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(154): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(153): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(161): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(160): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(166): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(165): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(174): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(173): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(179): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(178): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(186): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(190): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(189): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(195): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(194): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(203): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(202): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(209): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(208): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(214): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(218): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(217): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(226): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(225): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(231): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(235): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(234): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(243): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(242): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(250): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(254): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(253): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(260): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(259): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(267): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(271): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(270): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(277): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(276): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(282): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(286): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(285): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(292): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(291): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(296): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(300): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(299): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(305): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(304): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(310): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(314): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(313): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(320): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(319): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(325): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(329): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(328): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(335): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(334): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(339): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(343): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(342): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(348): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(347): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(354): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(358): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(357): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(363): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(362): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(368): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(372): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(371): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(377): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(376): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(382): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(386): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(385): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(391): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(390): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(398): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(402): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(401): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(407): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(406): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(412): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(416): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(415): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(421): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(420): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(426): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(430): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(429): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(435): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(434): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(440): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(444): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(443): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(449): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(448): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(456): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(460): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(459): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(465): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(464): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(470): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(474): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(473): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(479): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(478): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(484): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(488): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(487): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(493): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(492): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(498): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(502): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(501): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(507): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.cpp(506): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   SceneManager.cpp
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(36): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(37): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(44): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(45): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(56): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(55): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(62): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(61): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(70): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(74): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(73): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   SoundManager.cpp
-  State.cpp
-  StopState.cpp
-  Character.cpp
+  Switch.cpp
+  Teleport.cpp
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(36): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(37): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(44): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(45): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(56): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(55): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(62): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(61): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(70): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(74): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\playground.h(73): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\teleport.cpp(98): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\teleport.cpp(97): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\teleport.cpp(116): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\teleport.cpp(115): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\teleport.cpp(134): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\teleport.cpp(133): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\teleport.cpp(152): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\teleport.cpp(151): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   TimeManager.cpp
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\timemanager.cpp(48): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\timemanager.cpp(51): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\timemanager.cpp(54): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\timemanager.cpp(48): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\timemanager.cpp(51): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\timemanager.cpp(54): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   timer.cpp
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\timer.cpp(61): warning C4244: '=': 'float'에서 'unsigned long'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\timer.cpp(61): warning C4244: '=': 'float'에서 'unsigned long'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Transform.cpp
   txtData.cpp
   utils.cpp
   Vector2.cpp
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\vector2.cpp(90): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\vector2.cpp(90): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Vector3.cpp
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\vector3.h(3): warning C4005: 'Deg2Rad': 매크로 재정의
-  c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\stdafx.h(55): note: 'Deg2Rad'의 이전 정의를 참조하십시오.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\vector3.h(4): warning C4005: 'Rad2Deg': 매크로 재정의
-  c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\stdafx.h(56): note: 'Rad2Deg'의 이전 정의를 참조하십시오.
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\vector3.cpp(91): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\vector3.h(3): warning C4005: 'Deg2Rad': 매크로 재정의
+  c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\stdafx.h(59): note: 'Deg2Rad'의 이전 정의를 참조하십시오.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\vector3.h(4): warning C4005: 'Rad2Deg': 매크로 재정의
+  c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\stdafx.h(60): note: 'Rad2Deg'의 이전 정의를 참조하십시오.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\vector3.cpp(91): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   windowAPI.cpp
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\windowapi.cpp(85): warning C4244: 'return': 'WPARAM'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\windowapi.cpp(85): warning C4244: 'return': 'WPARAM'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   코드를 생성하고 있습니다...
-c:\users\administrator\desktop\visualc++\191231\팀포폴_길바\txtdata.cpp(54): warning C4172: 지역 변수 또는 임시: str의 주소를 반환하고 있습니다.
-Box2D.lib(b2ChainShape.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2ChainShape.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2CircleShape.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2CircleShape.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2EdgeShape.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2EdgeShape.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2PolygonShape.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2PolygonShape.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2BroadPhase.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2BroadPhase.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2CollideCircle.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2CollideCircle.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2CollideEdge.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2CollideEdge.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2CollidePolygon.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2CollidePolygon.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2Collision.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2Collision.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2Distance.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2Distance.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2DynamicTree.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2DynamicTree.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2TimeOfImpact.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2TimeOfImpact.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2BlockAllocator.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2BlockAllocator.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2Draw.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2Draw.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2Math.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2Math.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2Settings.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2Settings.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2StackAllocator.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2StackAllocator.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2Timer.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2Timer.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2ChainAndCircleContact.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2ChainAndCircleContact.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2ChainAndPolygonContact.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2ChainAndPolygonContact.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2CircleContact.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2CircleContact.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2Contact.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2Contact.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2ContactSolver.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2ContactSolver.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2EdgeAndCircleContact.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2EdgeAndCircleContact.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2EdgeAndPolygonContact.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2EdgeAndPolygonContact.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2PolygonAndCircleContact.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2PolygonAndCircleContact.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2PolygonContact.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2PolygonContact.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2DistanceJoint.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2DistanceJoint.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2FrictionJoint.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2FrictionJoint.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2GearJoint.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2GearJoint.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2Joint.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2Joint.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2MotorJoint.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2MotorJoint.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2MouseJoint.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2MouseJoint.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2PrismaticJoint.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2PrismaticJoint.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2PulleyJoint.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2PulleyJoint.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2RevoluteJoint.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2RevoluteJoint.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2RopeJoint.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2RopeJoint.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2WeldJoint.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2WeldJoint.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2WheelJoint.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2WheelJoint.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2Body.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2Body.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2ContactManager.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2ContactManager.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2Fixture.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2Fixture.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2Island.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2Island.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2World.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2World.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Box2D.lib(b2WorldCallbacks.obj) : warning LNK4099: 'Box2D.pdb' PDB를 'Box2D.lib(b2WorldCallbacks.obj)' 또는 'C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\Box2D.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-  windowAPI.vcxproj -> C:\Users\Administrator\Desktop\VisualC++\191231\팀포폴_길바\x64\Debug\windowAPI.exe
+c:\users\hyoli\downloads\ez-a08013247fea1dcdec9528f1d335cce722533524\ez-a08013247fea1dcdec9528f1d335cce722533524\txtdata.cpp(54): warning C4172: 지역 변수 또는 임시: str의 주소를 반환하고 있습니다.
+  LINK : C:\Users\hyoli\Downloads\EZ-a08013247fea1dcdec9528f1d335cce722533524\EZ-a08013247fea1dcdec9528f1d335cce722533524\x64\Debug\windowAPI.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+  windowAPI.vcxproj -> C:\Users\hyoli\Downloads\EZ-a08013247fea1dcdec9528f1d335cce722533524\EZ-a08013247fea1dcdec9528f1d335cce722533524\x64\Debug\windowAPI.exe

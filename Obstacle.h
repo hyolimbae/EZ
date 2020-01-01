@@ -1,6 +1,6 @@
 #pragma once
 #include "GameObject.h"
-#include "Character.h"
+#include "Player.h"
 #include <string>
 
 enum OBSTYPE
@@ -38,5 +38,4 @@ public:
 
 	void MoveUp();
 };
-
 
