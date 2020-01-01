@@ -23,7 +23,7 @@ HRESULT ElectricBox::Init()
 			character = (Character *)targetObj->GetPhysics()->GetBody()->GetUserData();
 			character->SetDeltaTime(0.5);
 			_timer = TIMEMANAGER->getWorldTime();
-			character->setHP(0);
+			character->SetHP(0);
 
 			if (targetObj->GetName() == "Erik")
 			{

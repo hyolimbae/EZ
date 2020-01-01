@@ -19,7 +19,7 @@ HRESULT Grinder::Init()
 		if (targetObj->GetTag() == "Character")
 		{
 			character = (Character *)targetObj->GetPhysics()->GetBody()->GetUserData();
-			character->setHP(0);	//나중에 매니저에서 hp = 0이 되면 키컨트롤 즉 character update쪽이 돌지 않도록 설정 
+			character->SetHP(0);	//나중에 매니저에서 hp = 0이 되면 키컨트롤 즉 character update쪽이 돌지 않도록 설정 
 
 
 			if (targetObj->GetName() == "Erik")
@@ -74,7 +74,7 @@ void Grinder::Update()
 				
 		}
 
-		if (character->getCurrentPosition().x == character->GetSprite()->GetMaxFrameX())
+		if (character->GetCurrentPosition().x == character->GetSprite()->GetMaxFrameX())
 		{
 			character->GetParent()->RemoveChild(character);
 			_isDown = false;

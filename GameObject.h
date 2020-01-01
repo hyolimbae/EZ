@@ -56,7 +56,7 @@ public:
 	Image* GetSprite();
 	Physics* GetPhysics() { return _physics; }
 	Transform* GetTransform() { return _transform; }
-	Vector2 getCurrentPosition() { return _currentPosition; }
+	Vector2 GetCurrentPosition() { return _currentPosition; }
 	int GetZOrder() { return _zOrder; }
 
 	//SETTER

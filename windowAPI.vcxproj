@@ -146,7 +146,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
+    <ClInclude Include="AtkState.h" />
+    <ClInclude Include="Baleog.h" />
     <ClInclude Include="BrokenWall.h" />
+    <ClInclude Include="Bullet.h" />
     <ClInclude Include="CameraManager.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="commonMacroFunction.h" />
@@ -154,22 +157,28 @@
     <ClInclude Include="Door.h" />
     <ClInclude Include="ElectricBox.h" />
     <ClInclude Include="ElectricRod.h" />
+    <ClInclude Include="Erik.h" />
     <ClInclude Include="Exit.h" />
     <ClInclude Include="EZ.h" />
+    <ClInclude Include="GameManager.h" />
     <ClInclude Include="gameNode.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GravityZone.h" />
     <ClInclude Include="Grinder.h" />
     <ClInclude Include="Ground.h" />
+    <ClInclude Include="IdleState.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="ImageManager.h" />
+    <ClInclude Include="JumpState.h" />
     <ClInclude Include="KeyHole.h" />
     <ClInclude Include="KeyManager.h" />
     <ClInclude Include="Ladder.h" />
     <ClInclude Include="Lift.h" />
     <ClInclude Include="Matrix2x2.h" />
     <ClInclude Include="Matrix3x3.h" />
+    <ClInclude Include="MoveState.h" />
     <ClInclude Include="Object.h" />
+    <ClInclude Include="Olaf.h" />
     <ClInclude Include="Physics.h" />
     <ClInclude Include="PhysicsManager.h" />
     <ClInclude Include="playGround.h" />
@@ -178,7 +187,9 @@
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="singletonBase.h" />
     <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="State.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StopState.h" />
     <ClInclude Include="Switch.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Teleport.h" />
@@ -193,39 +204,50 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="AtkState.cpp" />
+    <ClCompile Include="Baleog.cpp" />
     <ClCompile Include="BrokenWall.cpp" />
+    <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="CameraManager.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="DebugDraw.cpp" />
     <ClCompile Include="Door.cpp" />
     <ClCompile Include="ElectricBox.cpp" />
     <ClCompile Include="ElectricRod.cpp" />
+    <ClCompile Include="Erik.cpp" />
     <ClCompile Include="Exit.cpp" />
+    <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="gameNode.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GravityZone.cpp" />
     <ClCompile Include="Grinder.cpp" />
     <ClCompile Include="Ground.cpp" />
+    <ClCompile Include="IdleState.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="ImageManager.cpp" />
+    <ClCompile Include="JumpState.cpp" />
     <ClCompile Include="KeyHole.cpp" />
     <ClCompile Include="KeyManager.cpp" />
     <ClCompile Include="Ladder.cpp" />
     <ClCompile Include="Lift.cpp" />
     <ClCompile Include="Matrix2x2.cpp" />
     <ClCompile Include="Matrix3x3.cpp" />
+    <ClCompile Include="MoveState.cpp" />
     <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Olaf.cpp" />
     <ClCompile Include="Physics.cpp" />
     <ClCompile Include="PhysicsManager.cpp" />
     <ClCompile Include="playGround.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="State.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="StopState.cpp" />
     <ClCompile Include="Switch.cpp" />
     <ClCompile Include="Teleport.cpp" />
     <ClCompile Include="TimeManager.cpp" />

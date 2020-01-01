@@ -48,26 +48,32 @@
     <Filter Include="playGround\character">
       <UniqueIdentifier>{2240800b-8319-428d-bf74-9b951ca48096}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\헤더 파일">
+    <Filter Include="헤더 파일">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="playGround\character\State">
+      <UniqueIdentifier>{6711f83d-bad0-41d7-bce0-b4ed5ee4200b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\character\bullet">
+      <UniqueIdentifier>{eaaa2dc7-17bd-45dd-96b0-a3ee2f3105f6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
-      <Filter>소스 파일\헤더 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>소스 파일\헤더 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Resource.h">
-      <Filter>소스 파일\헤더 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="windowAPI.h">
-      <Filter>소스 파일\헤더 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="commonMacroFunction.h">
-      <Filter>소스 파일\헤더 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="gameNode.h">
       <Filter>2DGameFramework</Filter>
@@ -79,7 +85,7 @@
       <Filter>2DGameFramework\SingletonBase</Filter>
     </ClInclude>
     <ClInclude Include="randomFunction.h">
-      <Filter>소스 파일\헤더 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="utils.h">
       <Filter>2DGameFramework\Util</Filter>
@@ -188,6 +194,39 @@
     </ClInclude>
     <ClInclude Include="Ladder.h">
       <Filter>playGround\obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>playGround</Filter>
+    </ClInclude>
+    <ClInclude Include="Erik.h">
+      <Filter>playGround\character</Filter>
+    </ClInclude>
+    <ClInclude Include="Baleog.h">
+      <Filter>playGround\character</Filter>
+    </ClInclude>
+    <ClInclude Include="Olaf.h">
+      <Filter>playGround\character</Filter>
+    </ClInclude>
+    <ClInclude Include="AtkState.h">
+      <Filter>playGround\character\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>playGround\character\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="IdleState.h">
+      <Filter>playGround\character\State</Filter>
+    </ClInclude>
+    <ClInclude Include="JumpState.h">
+      <Filter>playGround\character\State</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveState.h">
+      <Filter>playGround\character\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>playGround\character\State</Filter>
+    </ClInclude>
+    <ClInclude Include="StopState.h">
+      <Filter>playGround\character\State</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -307,6 +346,39 @@
     </ClCompile>
     <ClCompile Include="Ladder.cpp">
       <Filter>playGround\obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>playGround</Filter>
+    </ClCompile>
+    <ClCompile Include="Erik.cpp">
+      <Filter>playGround\character</Filter>
+    </ClCompile>
+    <ClCompile Include="Baleog.cpp">
+      <Filter>playGround\character</Filter>
+    </ClCompile>
+    <ClCompile Include="Olaf.cpp">
+      <Filter>playGround\character</Filter>
+    </ClCompile>
+    <ClCompile Include="AtkState.cpp">
+      <Filter>playGround\character\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>playGround\character\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="IdleState.cpp">
+      <Filter>playGround\character\State</Filter>
+    </ClCompile>
+    <ClCompile Include="JumpState.cpp">
+      <Filter>playGround\character\State</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveState.cpp">
+      <Filter>playGround\character\State</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp">
+      <Filter>playGround\character\State</Filter>
+    </ClCompile>
+    <ClCompile Include="StopState.cpp">
+      <Filter>playGround\character\State</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

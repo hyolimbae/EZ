@@ -95,7 +95,7 @@ public:
 	Vector2 GetFrameSize(int frame) { return Vector2(_frameInfo[frame].Width, _frameInfo[frame].Height); }
 	float GetCameraX() { return _cameraX; }
 	float GetCameraY() { return _cameraY; }
-
+	bool GetFlipX() { return _flipX; }
 
 	bool IsFrameImage()
 	{
