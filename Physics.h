@@ -48,7 +48,11 @@ public:
 	//SETTER
 	void SetBody(b2Body* body) { _body = body; }
 	void SetFixture(b2Fixture* fixture) { _fixture = fixture; }
-	void SetFriction(float friction) { _friction = friction; }
+	void SetFriction(float friction) 
+	{ 
+		_friction = friction; 
+		_body->GetFixtureList()->SetFriction(_friction);
+	}
 	void SetGroupIndex(int index) 
 	{ 
 		b2Filter filter;

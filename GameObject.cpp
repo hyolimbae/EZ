@@ -45,10 +45,13 @@ void GameObject::SetCollisionExitFunc(function<void(GameObject*, GameObject*)> e
 
 void GameObject::Update()
 {
+	Object::Update();
+	if (!_sprite || !_sprite->IsFrameImage())
+		return;
 	_count++;
 	if (TIMEMANAGER->GetFPS()*_deltaTime / _count == 1)
 	{
-		_currentPosition.x = (int)(_currentPosition.x + 1) % (_sprite->GetMaxFrameX()+1);
+		_currentPosition.x = (int)(_currentPosition.x+1) % (_sprite->GetMaxFrameX());
 		_count = 0;
 	}
 	_currentPosition.y = 0;
@@ -58,6 +61,7 @@ void GameObject::Render()
 {
 	if (!_sprite)
 		return;
+
 	Vector2 position = _transform->GetPosition();
 	_sprite->SetAngle(_transform->GetRotation());
 	_sprite->SetScale(_transform->GetScale());
@@ -66,7 +70,7 @@ void GameObject::Render()
 
 
 	if(_sprite->IsFrameImage()) 
-		_sprite->FrameRender(position.x, position.y, _currentPosition.x,_currentPosition.y, Pivot::CENTER);
+		_sprite->FrameRender(position.x, position.y, _currentPosition.x, Pivot::CENTER);
 	else 
 		_sprite->Render(position.x, position.y,Pivot::CENTER);
 }

@@ -239,6 +239,7 @@ void PhysicsManager::IgnoreCollision(GameObject * obj1, GameObject * obj2)
 }
 
 
+
 void PhysicsManager::BeginContact(b2Contact * contact)
 {
 	GameObject* a = (GameObject*)contact->GetFixtureA()->GetBody()->GetUserData();
@@ -267,7 +268,7 @@ void PhysicsManager::EndContact(b2Contact * contact)
 
 }
 
-void PhysicsManager::PreSolve(b2Contact * contact, const b2Manifold * oldManifold)
+void PhysicsManager::PostSolve(b2Contact* contact, const b2ContactImpulse* impulse)
 {
 
 	GameObject* a = (GameObject*)contact->GetFixtureA()->GetBody()->GetUserData();
