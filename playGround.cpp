@@ -82,15 +82,20 @@ HRESULT playGround::Init()
 	
 
 	//LEFT_TOP
-	CAMERAMANAGER->SetPosition(Vector2((-1)*BACKGROUND_WIDTH/2+WINSIZEX/2, (-1)*BACKGROUND_HEIGHT/2+WINSIZEY/2));
+	//CAMERAMANAGER->SetPosition(Vector2((-1)*BACKGROUND_WIDTH/2+WINSIZEX/2, (-1)*BACKGROUND_HEIGHT/2+WINSIZEY/2));
 
 	//map init 
 	map = new Map();
 	map->Init();
 
 
+
+	cm = new CharacterManager();
+
+
+
 	//character test inint 
-	auto _erik = (GameObject*) new Erik();
+	auto _erik = new Erik();
 	_erik->SetTag("Character");
 	_erik->SetName("Erik");
 	_erik->Init();
@@ -117,7 +122,8 @@ HRESULT playGround::Init()
 	_erik->GetPhysics()->SetCategoryBit(0x0002);
 	AddChild(_erik);
 
-	/*auto _olaf = (GameObject*) new Olaf();
+
+	auto _olaf = new Olaf();
 	_olaf->SetTag("Character");
 	_olaf->SetName("Olaf");
 	_olaf->Init();
@@ -138,7 +144,7 @@ HRESULT playGround::Init()
 	AddChild(_olaf);
 
 
-	auto _baleog = (GameObject*) new Baleog();
+	auto _baleog =  new Baleog();
 	_baleog->SetTag("Character");
 	_baleog->SetName("Baleog");
 	_baleog->Init();
@@ -159,10 +165,23 @@ HRESULT playGround::Init()
 	AddChild(_baleog);
 
 
+
+	cm->AddCharacter(_erik);
+	cm->AddCharacter(_baleog);
+	cm->AddCharacter(_olaf);
+	AddChild(cm);
+
+
+	ui = new UI();
+	AddChild(ui);
+	ui->SetZOrder(10);
+	ui->SetIsUI(true);
+
+	ui->SetLink(cm);
 	
 	PHYSICSMANAGER->IgnoreCollision(_olaf, _erik);
 	PHYSICSMANAGER->IgnoreCollision(_olaf, _baleog);
-	PHYSICSMANAGER->IgnoreCollision(_baleog, _erik);*/
+	PHYSICSMANAGER->IgnoreCollision(_baleog, _erik);
 	
 	
 

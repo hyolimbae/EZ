@@ -109,44 +109,13 @@ Vector2 Image::GetPivotPosition(int x, int y, Pivot::Enum pivot)
 	return pos;
 }
 
-void Image::Render(int x, int y, Pivot::Enum pivot, bool isRelativePos)
+void Image::Render(int x, int y, Pivot::Enum pivot, bool isUI)
 {
 	//SCALE
 	_size.x *= _scale.x;
 	_size.y *= _scale.y;
 
-
 	Vector2 render = GetPivotPosition(x, y, pivot);
-
-	////if (isRelativePos)
-	////{
-	////	//카메라
-	////	float zoom = 1 / 2;
-	////	//여기서 ZOOM = ZOOMED / ORIGINAL? 
-
-	////	//so you scale things down here 
-	////	vector2D scale = vector2D(zoom, zoom);
-	////	_size.x *= scale.x;
-	////	_size.y *= scale.y;
-
-
-	////}
-
-	////카메라에 없으면 랜더x
-
-	////relative pos - size needs to be somewhere in between 0 and winsizex (which we decided to be the range of camera)
-	////so why do we have to scale things down and up?
-	//if (render.x-_size.x > WINSIZEX || render.x + _size.x < 0 ||
-	//	render.y-_size.y > WINSIZEY || render.y + _size.y < 0)
-	//{
-	//	resetRenderOption();
-	//	return;
-	//}
-
-	////--->From here, in range of camera 
-
-
-	//and scale things up here again?
 	Vector2 factor = Vector2(_size.x / _scale.x, _size.y / _scale.y);
 	D2D1_SIZE_F size = { factor.x, factor.y };
 	D2D1::Matrix3x2F scale = D2D1::Matrix3x2F::Identity();
@@ -211,20 +180,20 @@ void Image::Render(int x, int y, Pivot::Enum pivot, bool isRelativePos)
 		);
 
 	Matrix3x3 result = cameraScale * cameraRotate * cameraTranslate;
-	_RT->SetTransform(D2D1::Matrix3x2F::Identity() * scale* flip *rotation *translation * result.To_D2D1_Matrix_3x2_F());
+	if (isUI)
+		_RT->SetTransform(D2D1::Matrix3x2F::Identity() * scale* flip *rotation *translation);
+	else
+		_RT->SetTransform(D2D1::Matrix3x2F::Identity() * scale* flip *rotation *translation * result.To_D2D1_Matrix_3x2_F());
 	//_RT->SetTransform(D2D1::Matrix3x2F::Identity() * flip *rotation *translation);
 	_RT->DrawBitmap(_bitmap, dxArea, _alpha);
 
 
-	//RESET
-	//before you render, make sure to set option values independently; 
-	//it works this way in order not to interfere with other images you render.
 	_RT->SetTransform(D2D1::Matrix3x2F::Identity());
 	ResetRenderOption();
 
 }
 
-void Image::FrameRender(int x, int y, int frameX, Pivot::Enum pivot, bool isRelativePos)
+void Image::FrameRender(int x, int y, int frameX, bool isUI, Pivot::Enum pivot)
 {
 	int frame = frameX;
 	_size = GetFrameSize(frame);
@@ -288,7 +257,10 @@ void Image::FrameRender(int x, int y, int frameX, Pivot::Enum pivot, bool isRela
 		);
 
 	Matrix3x3 result = cameraScale * cameraRotate * cameraTranslate;
-	_RT->SetTransform(D2D1::Matrix3x2F::Identity()* flip* rotaion * trans * result.To_D2D1_Matrix_3x2_F());
+	if (!isUI)
+		_RT->SetTransform(D2D1::Matrix3x2F::Identity()* flip* rotaion * trans * result.To_D2D1_Matrix_3x2_F());
+	else
+		_RT->SetTransform(D2D1::Matrix3x2F::Identity()* flip* rotaion * trans);
 	_RT->DrawBitmap(_bitmap, dxArea, _alpha, D2D1_BITMAP_INTERPOLATION_MODE_LINEAR, &dxSrc);
 
 

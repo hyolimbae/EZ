@@ -34,6 +34,8 @@ protected:
 	bool _loop;
 	int _count = 0;
 	int _zOrder = 0;
+	bool _isUI = false;
+
 public:
 
 	GameObject();
@@ -58,6 +60,7 @@ public:
 	Transform* GetTransform() { return _transform; }
 	Vector2 GetCurrentPosition() { return _currentPosition; }
 	int GetZOrder() { return _zOrder; }
+	bool GetIsUI() { return _isUI; }
 
 	//SETTER
 	void SetSprite(Image* sprite);
@@ -67,6 +70,7 @@ public:
 	{
 		_zOrder = zOrder;
 	}
+	void SetIsUI(bool isUI) { _isUI = isUI; }
 
 	template <typename T>
 	static GameObject* CreateObject(T, GameObject* parent = nullptr)
