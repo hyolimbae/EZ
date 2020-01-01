@@ -58,6 +58,9 @@
     <Filter Include="playGround\character\bullet">
       <UniqueIdentifier>{eaaa2dc7-17bd-45dd-96b0-a3ee2f3105f6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="playGround\map">
+      <UniqueIdentifier>{14a7838a-deb4-4f5a-870f-04fc5342c72d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -228,6 +231,12 @@
     <ClInclude Include="StopState.h">
       <Filter>playGround\character\State</Filter>
     </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>playGround</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>playGround\map</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -379,6 +388,12 @@
     </ClCompile>
     <ClCompile Include="StopState.cpp">
       <Filter>playGround\character\State</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>playGround</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>playGround\map</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

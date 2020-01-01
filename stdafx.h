@@ -52,10 +52,6 @@ using namespace SEVENTEEN_UTIL;
 #include "Box2D/Box2D.h"
 #pragma comment(lib, "lib/x86_64/Debug/Box2D.lib")
 
-#define BACKGROUND_SCALE 0.2
-#define BACKGROUND_WIDTH 4032 *BACKGROUND_SCALE
-#define BACKGROUND_HEIGHT 2000 *BACKGROUND_SCALE
-
 #define Deg2Rad PI/180.f
 #define Rad2Deg 180.f/PI
 
@@ -63,6 +59,27 @@ using namespace SEVENTEEN_UTIL;
 #define SAFE_DELETE(p) {if(p) {delete(p); (p)=NULL;}}
 #define SAFE_Release(p) {if(p) {(p)->Release(); (p) = NULL;}}
 #define SAFE_DELETE_ARRAY(p) {if(p) { delete[](p); (p) = NULL;}}
+
+#define BACKGROUND_SCALE 0.8
+#define BACKGROUND_WIDTH 4032 *BACKGROUND_SCALE
+#define BACKGROUND_HEIGHT 2000 *BACKGROUND_SCALE
+
+inline Vector2 Hyolim_LeftTop(Vector2 vec, float width, float height)
+{
+	Vector2 temp;
+	temp.x = (vec.x) * BACKGROUND_SCALE + width / 2 - BACKGROUND_WIDTH / 2;
+	temp.y = (vec.y) * BACKGROUND_SCALE + height / 2 - BACKGROUND_HEIGHT / 2;
+	return temp;
+}
+
+inline Vector2 Hyolim_Center(Vector2 vec)
+{
+	Vector2 temp;
+	temp.x = (vec.x)*BACKGROUND_SCALE - BACKGROUND_WIDTH / 2;
+	temp.y = (vec.y)*BACKGROUND_SCALE - BACKGROUND_HEIGHT / 2;
+	return temp;
+}
+
 
 template <typename T>
 inline void SafeRelease(T*&p)
@@ -73,6 +90,7 @@ inline void SafeRelease(T*&p)
 		p = NULL;
 	}
 }
+
 
 //==========================================
 // ## 19.10.31 ## Extern

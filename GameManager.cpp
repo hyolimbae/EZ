@@ -10,3 +10,13 @@ GameManager::GameManager()
 GameManager::~GameManager()
 {
 }
+
+HRESULT GameManager::Init()
+{
+	return S_OK;
+}
+
+void GameManager::Update()
+{
+
+}

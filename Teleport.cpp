@@ -93,7 +93,7 @@ void Teleport::Teleport1ATo1B()
 			{
 				Teleport* teleport1B = (Teleport*)GetParent()->GetChildByName("teleport1B");
 
-				character->GetTransform()->SetPosition(playGround::Hyolim_LeftTop(Vector2(3938, 1301),
+				character->GetTransform()->SetPosition(Hyolim_LeftTop(Vector2(3938, 1301),
 					teleport1B->GetTransform()->GetSize().x*BACKGROUND_SCALE,
 					teleport1B->GetTransform()->GetSize().y*BACKGROUND_SCALE));
 			}
@@ -111,7 +111,7 @@ void Teleport::Teleport1BTo1A()
 			{
 				Teleport* teleport1A = (Teleport*)GetParent()->GetChildByName("teleport1A");
 
-				character->GetTransform()->SetPosition(playGround::Hyolim_LeftTop(Vector2(158, 344),
+				character->GetTransform()->SetPosition(Hyolim_LeftTop(Vector2(158, 344),
 					teleport1A->GetTransform()->GetSize().x*BACKGROUND_SCALE,
 					teleport1A->GetTransform()->GetSize().y*BACKGROUND_SCALE));
 			}
@@ -129,7 +129,7 @@ void Teleport::Teleport2ATo2B()
 			{
 				Teleport* teleport2B = (Teleport*)GetParent()->GetChildByName("teleport2B");
 
-				character->GetTransform()->SetPosition(playGround::Hyolim_LeftTop(Vector2(208, 1754),
+				character->GetTransform()->SetPosition(Hyolim_LeftTop(Vector2(208, 1754),
 					teleport2B->GetTransform()->GetSize().x*BACKGROUND_SCALE,
 					teleport2B->GetTransform()->GetSize().y*BACKGROUND_SCALE));
 			}
@@ -147,7 +147,7 @@ void Teleport::Teleport2BTo2A()
 			{
 				Teleport* teleport2A = (Teleport*)GetParent()->GetChildByName("teleport2A");
 
-				character->GetTransform()->SetPosition(playGround::Hyolim_LeftTop(Vector2(258, 1352),
+				character->GetTransform()->SetPosition(Hyolim_LeftTop(Vector2(258, 1352),
 					teleport2A->GetTransform()->GetSize().x*BACKGROUND_SCALE,
 					teleport2A->GetTransform()->GetSize().y*BACKGROUND_SCALE));
 			}

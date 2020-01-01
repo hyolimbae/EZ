@@ -71,7 +71,7 @@ void Lift::LiftMove()
 
 		if (_isLiftMovingUp)
 		{
-			if (_transform->GetPosition().y > playGround::Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 950),
+			if (_transform->GetPosition().y > Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 950),
 				_transform->GetSize().x*BACKGROUND_SCALE, _transform->GetSize().y*BACKGROUND_SCALE).y)
 			{
 				_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y - 1));
@@ -79,7 +79,7 @@ void Lift::LiftMove()
 		}
 		else
 		{
-			if (_transform->GetPosition().y < playGround::Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 1804),
+			if (_transform->GetPosition().y < Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 1804),
 				_transform->GetSize().x*BACKGROUND_SCALE, _transform->GetSize().y*BACKGROUND_SCALE).y)
 			{
 				_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y + 1));

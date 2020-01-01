@@ -13,13 +13,6 @@ gameNode::~gameNode()
 
 HRESULT gameNode::Init()
 {
-	//물리 세계 초기화 
-	//b2Vec2 gravity(0.0f, -9.8f);
-	//_physicsWorld = new b2World(gravity);
-	//_physicsWorld->SetAllowSleeping(true);
-	//_physicsWorld->SetContinuousPhysics(true);
-
-
 
 	_hdc = GetDC(_hWnd);
 	_managerInit = false;

@@ -94,7 +94,7 @@ void Door::Door1Opening()
 {
 	if (_name == "doorTop1")
 	{
-		if (_transform->GetPosition().y > playGround::Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 1250 - 76),
+		if (_transform->GetPosition().y > Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 1250 - 76),
 				_transform->GetSize().x*BACKGROUND_SCALE, _transform->GetSize().y*BACKGROUND_SCALE).y)
 		{
 			_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y - 2));
@@ -102,7 +102,7 @@ void Door::Door1Opening()
 	}
 	else if (_name == "doorBottom1")
 	{
-		if (_transform->GetPosition().y < playGround::Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 1326 + 76),
+		if (_transform->GetPosition().y < Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 1326 + 76),
 			_transform->GetSize().x*BACKGROUND_SCALE, _transform->GetSize().y*BACKGROUND_SCALE).y)
 		{
 			_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y + 2));
@@ -114,7 +114,7 @@ void Door::Door1Closing()
 {
 	if (_name == "doorTop1")
 	{
-		if (_transform->GetPosition().y < playGround::Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 1250),
+		if (_transform->GetPosition().y < Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 1250),
 			_transform->GetSize().x*BACKGROUND_SCALE, _transform->GetSize().y*BACKGROUND_SCALE).y)
 		{
 			_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y + 2));
@@ -122,7 +122,7 @@ void Door::Door1Closing()
 	}
 	else if (_name == "doorBottom1")
 	{
-		if (_transform->GetPosition().y > playGround::Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 1326),
+		if (_transform->GetPosition().y > Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 1326),
 			_transform->GetSize().x*BACKGROUND_SCALE, _transform->GetSize().y*BACKGROUND_SCALE).y)
 		{
 			_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y - 2));
@@ -134,7 +134,7 @@ void Door::Door2Opening()
 {
 	if (_name == "doorTop2")
 	{
-		if (_transform->GetPosition().y > playGround::Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 295 - 76),
+		if (_transform->GetPosition().y > Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 295 - 76),
 			_transform->GetSize().x*BACKGROUND_SCALE, _transform->GetSize().y*BACKGROUND_SCALE).y)
 		{
 			_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y - 2));
@@ -142,7 +142,7 @@ void Door::Door2Opening()
 	}
 	else if (_name == "doorBottom2")
 	{
-		if (_transform->GetPosition().y < playGround::Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 371 + 76),
+		if (_transform->GetPosition().y < Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 371 + 76),
 			_transform->GetSize().x*BACKGROUND_SCALE, _transform->GetSize().y*BACKGROUND_SCALE).y)
 		{
 			_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y + 2));
@@ -154,7 +154,7 @@ void Door::Door2Closing()
 {
 	if (_name == "doorTop2")
 	{
-		if (_transform->GetPosition().y < playGround::Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 295),
+		if (_transform->GetPosition().y < Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 295),
 			_transform->GetSize().x*BACKGROUND_SCALE, _transform->GetSize().y*BACKGROUND_SCALE).y)
 		{
 			_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y + 2));
@@ -162,7 +162,7 @@ void Door::Door2Closing()
 	}
 	else if (_name == "doorBottom2")
 	{
-		if (_transform->GetPosition().y > playGround::Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 371),
+		if (_transform->GetPosition().y > Hyolim_LeftTop(Vector2(_transform->GetPosition().x, 371),
 			_transform->GetSize().x*BACKGROUND_SCALE, _transform->GetSize().y*BACKGROUND_SCALE).y)
 		{
 			_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y - 2));

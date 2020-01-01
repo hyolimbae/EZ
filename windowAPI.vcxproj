@@ -174,6 +174,7 @@
     <ClInclude Include="KeyManager.h" />
     <ClInclude Include="Ladder.h" />
     <ClInclude Include="Lift.h" />
+    <ClInclude Include="Map.h" />
     <ClInclude Include="Matrix2x2.h" />
     <ClInclude Include="Matrix3x3.h" />
     <ClInclude Include="MoveState.h" />
@@ -197,6 +198,7 @@
     <ClInclude Include="timer.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="txtData.h" />
+    <ClInclude Include="UI.h" />
     <ClInclude Include="utils.h" />
     <ClInclude Include="Vector2.h" />
     <ClInclude Include="Vector3.h" />
@@ -230,6 +232,7 @@
     <ClCompile Include="KeyManager.cpp" />
     <ClCompile Include="Ladder.cpp" />
     <ClCompile Include="Lift.cpp" />
+    <ClCompile Include="Map.cpp" />
     <ClCompile Include="Matrix2x2.cpp" />
     <ClCompile Include="Matrix3x3.cpp" />
     <ClCompile Include="MoveState.cpp" />
@@ -254,6 +257,7 @@
     <ClCompile Include="timer.cpp" />
     <ClCompile Include="Transform.cpp" />
     <ClCompile Include="txtData.cpp" />
+    <ClCompile Include="UI.cpp" />
     <ClCompile Include="utils.cpp" />
     <ClCompile Include="Vector2.cpp" />
     <ClCompile Include="Vector3.cpp" />
