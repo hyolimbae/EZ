@@ -1,7 +1,6 @@
 #include "stdafx.h"
 #include "KeyHole.h"
 
-
 KeyHole::KeyHole()
 {
 	_physics = new Physics();
@@ -44,6 +43,9 @@ void KeyHole::Update()
 		//여기서 문을 열어야하죵 
 		//GameObject* obj = (GameObject *)GetParent()->GetChildByName("door");
 		//obj->GetPhysics()->SetIsSensor(false);
+
+
+
 
 	}
 }

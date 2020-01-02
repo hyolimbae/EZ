@@ -8,6 +8,8 @@
 #include "CharacterManager.h"
 #include "UI.h"
 
+#include "Item.h"
+
 using namespace std;
 
 class playGround : public gameNode
@@ -16,6 +18,7 @@ private:
 	Map* map;
 	CharacterManager* cm;
 	UI* ui;
+	Item* item;
 
 public:
 	playGround();

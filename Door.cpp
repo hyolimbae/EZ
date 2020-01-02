@@ -9,64 +9,63 @@ HRESULT Door::Init()
 
 	SetCollisionEnterFunc([&](GameObject* thisObj, GameObject* targetObj)
 	{
-		if (targetObj->GetTag() == "character")
+		if (targetObj->GetTag() == "Character")
 		{
 			Character* character = (Character*)targetObj->GetPhysics()->GetBody()->GetUserData();
-			//character->SetState(IDLE);
 
-			if (thisObj->GetName() == "doorSensor1")
-			{
-				Door* door1B = (Door*)thisObj->GetParent()->GetChildByName("doorBottom1");
-				door1B->SetIsDoor1Opening(true);
-				door1B->SetIsDoor1Closing(false);
-				Door* door1T = (Door*)thisObj->GetParent()->GetChildByName("doorTop1");
-				door1T->SetIsDoor1Opening(true);
-				door1T->SetIsDoor1Closing(false);
+			//if (thisObj->GetName() == "doorSensor1")
+			//{
+			//	Door* door1B = (Door*)thisObj->GetParent()->GetChildByName("doorBottom1");
+			//	door1B->SetIsDoor1Opening(true);
+			//	door1B->SetIsDoor1Closing(false);
+			//	Door* door1T = (Door*)thisObj->GetParent()->GetChildByName("doorTop1");
+			//	door1T->SetIsDoor1Opening(true);
+			//	door1T->SetIsDoor1Closing(false);
 
-				thisObj->GetPhysics()->GetFixture()->SetSensor(true);
-			}
-			if (thisObj->GetName() == "doorSensor2")
-			{
-				Door* door1B = (Door*)thisObj->GetParent()->GetChildByName("doorBottom2");
-				door1B->SetIsDoor2Opening(true);
-				door1B->SetIsDoor2Closing(false);
-				Door* door1T = (Door*)thisObj->GetParent()->GetChildByName("doorTop2");
-				door1T->SetIsDoor2Opening(true);
-				door1T->SetIsDoor2Closing(false);
+			//	thisObj->GetPhysics()->GetFixture()->SetSensor(true);
+			//}
+			//if (thisObj->GetName() == "doorSensor2")
+			//{
+			//	Door* door1B = (Door*)thisObj->GetParent()->GetChildByName("doorBottom2");
+			//	door1B->SetIsDoor2Opening(true);
+			//	door1B->SetIsDoor2Closing(false);
+			//	Door* door1T = (Door*)thisObj->GetParent()->GetChildByName("doorTop2");
+			//	door1T->SetIsDoor2Opening(true);
+			//	door1T->SetIsDoor2Closing(false);
 
-				thisObj->GetPhysics()->GetFixture()->SetSensor(true);
-			}
+			//	thisObj->GetPhysics()->GetFixture()->SetSensor(true);
+			//}
 		}
 	});
 
 	SetCollisionExitFunc([&](GameObject* thisObj, GameObject* targetObj)
 	{
-		if (targetObj->GetTag() == "character")
+		if (targetObj->GetTag() == "Character")
 		{
 			Character* character = (Character*)targetObj->GetPhysics()->GetBody()->GetUserData();
 
-			if (thisObj->GetName() == "doorSensor1")
-			{
-				Door* door2B = (Door*)thisObj->GetParent()->GetChildByName("doorBottom1");
-				door2B->SetIsDoor1Opening(false);
-				door2B->SetIsDoor1Closing(true);
-				Door* door2T = (Door*)thisObj->GetParent()->GetChildByName("doorTop1");
-				door2T->SetIsDoor1Opening(false);
-				door2T->SetIsDoor1Closing(true);
+			//if (thisObj->GetName() == "doorSensor1")
+			//{
+			//	Door* door2B = (Door*)thisObj->GetParent()->GetChildByName("doorBottom1");
+			//	door2B->SetIsDoor1Opening(false);
+			//	door2B->SetIsDoor1Closing(true);
+			//	Door* door2T = (Door*)thisObj->GetParent()->GetChildByName("doorTop1");
+			//	door2T->SetIsDoor1Opening(false);
+			//	door2T->SetIsDoor1Closing(true);
 
-				thisObj->GetPhysics()->GetFixture()->SetSensor(false);
-			}
-			if (thisObj->GetName() == "doorSensor2")
-			{
-				Door* door2B = (Door*)thisObj->GetParent()->GetChildByName("doorBottom2");
-				door2B->SetIsDoor2Opening(false);
-				door2B->SetIsDoor2Closing(true);
-				Door* door2T = (Door*)thisObj->GetParent()->GetChildByName("doorTop2");
-				door2T->SetIsDoor2Opening(false);
-				door2T->SetIsDoor2Closing(true);
+			//	thisObj->GetPhysics()->GetFixture()->SetSensor(false);
+			//}
+			//if (thisObj->GetName() == "doorSensor2")
+			//{
+			//	Door* door2B = (Door*)thisObj->GetParent()->GetChildByName("doorBottom2");
+			//	door2B->SetIsDoor2Opening(false);
+			//	door2B->SetIsDoor2Closing(true);
+			//	Door* door2T = (Door*)thisObj->GetParent()->GetChildByName("doorTop2");
+			//	door2T->SetIsDoor2Opening(false);
+			//	door2T->SetIsDoor2Closing(true);
 
-				thisObj->GetPhysics()->GetFixture()->SetSensor(false);
-			}
+			//	thisObj->GetPhysics()->GetFixture()->SetSensor(false);
+			//}
 		}
 	});
 
@@ -99,6 +98,11 @@ void Door::Door1Opening()
 		{
 			_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y - 2));
 		}
+		else
+		{
+			SetIsDoor1Opening(false);
+			SetIsDoor1Closing(true);
+		}
 	}
 	else if (_name == "doorBottom1")
 	{
@@ -106,6 +110,11 @@ void Door::Door1Opening()
 			_transform->GetSize().x*BACKGROUND_SCALE, _transform->GetSize().y*BACKGROUND_SCALE).y)
 		{
 			_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y + 2));
+		}
+		else
+		{
+			SetIsDoor1Opening(false);
+			SetIsDoor1Closing(true);
 		}
 	}
 }
@@ -139,6 +148,11 @@ void Door::Door2Opening()
 		{
 			_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y - 2));
 		}
+		else
+		{
+			SetIsDoor2Opening(false);
+			SetIsDoor2Closing(true);
+		}
 	}
 	else if (_name == "doorBottom2")
 	{
@@ -146,6 +160,11 @@ void Door::Door2Opening()
 			_transform->GetSize().x*BACKGROUND_SCALE, _transform->GetSize().y*BACKGROUND_SCALE).y)
 		{
 			_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y + 2));
+		}
+		else
+		{
+			SetIsDoor2Opening(false);
+			SetIsDoor2Closing(true);
 		}
 	}
 }
@@ -159,6 +178,10 @@ void Door::Door2Closing()
 		{
 			_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y + 2));
 		}
+		else
+		{
+			SetIsDoor2Closing(true);
+		}
 	}
 	else if (_name == "doorBottom2")
 	{
@@ -166,6 +189,10 @@ void Door::Door2Closing()
 			_transform->GetSize().x*BACKGROUND_SCALE, _transform->GetSize().y*BACKGROUND_SCALE).y)
 		{
 			_transform->SetPosition(Vector2(_transform->GetPosition().x, _transform->GetPosition().y - 2));
+		}
+		else
+		{
+			SetIsDoor2Closing(true);
 		}
 	}
 }

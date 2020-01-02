@@ -6,7 +6,7 @@ HRESULT Teleport::Init()
 {
 	SetCollisionEnterFunc([&](GameObject* thisObj, GameObject* targetObj)
 	{
-		if (targetObj->GetTag() == "character")
+		if (targetObj->GetTag() == "Character")
 		{
 			Character* character = (Character*)targetObj->GetPhysics()->GetBody()->GetUserData();
 
@@ -39,7 +39,7 @@ HRESULT Teleport::Init()
 
 	SetCollisionExitFunc([&](GameObject* thisObj, GameObject* targetObj)
 	{
-		if (targetObj->GetTag() == "character")
+		if (targetObj->GetTag() == "Character")
 		{
 			Character* character = (Character*)targetObj->GetPhysics()->GetBody()->GetUserData();
 			//character->SetState(IDLE);

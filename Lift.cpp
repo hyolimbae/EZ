@@ -10,7 +10,7 @@ HRESULT Lift::Init()
 
 	SetCollisionEnterFunc([&](GameObject* thisObj, GameObject* targetObj)
 	{
-		if (targetObj->GetTag() == "character")
+		if (targetObj->GetTag() == "Character")
 		{
 			character = (Character *)targetObj->GetPhysics()->GetBody()->GetUserData();
 			//character->SetState(IDLE);
@@ -25,7 +25,7 @@ HRESULT Lift::Init()
 
 	SetCollisionStayFunc([&](GameObject* thisObj, GameObject* targetObj)
 	{
-		if (targetObj->GetTag() == "character")
+		if (targetObj->GetTag() == "Character")
 		{
 			character = (Character *)targetObj->GetPhysics()->GetBody()->GetUserData();
 		}
@@ -33,7 +33,7 @@ HRESULT Lift::Init()
 
 	SetCollisionExitFunc([&](GameObject* thisObj, GameObject* targetObj)
 	{
-		if (targetObj->GetTag() == "character")
+		if (targetObj->GetTag() == "Character")
 		{
 			character = (Character *)targetObj->GetPhysics()->GetBody()->GetUserData();
 
