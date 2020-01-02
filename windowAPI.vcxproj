@@ -146,6 +146,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
+    <ClInclude Include="ApplicationManager.h" />
     <ClInclude Include="AtkState.h" />
     <ClInclude Include="Baleog.h" />
     <ClInclude Include="BrokenWall.h" />
@@ -207,6 +208,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="ApplicationManager.cpp" />
     <ClCompile Include="AtkState.cpp" />
     <ClCompile Include="Baleog.cpp" />
     <ClCompile Include="BrokenWall.cpp" />

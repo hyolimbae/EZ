@@ -5,7 +5,7 @@ HRESULT Ladder::Init()
 {
 	SetCollisionEnterFunc([&](GameObject* thisObj, GameObject* targetObj)
 	{
-		if (targetObj->GetTag() == "character")
+		if (targetObj->GetTag() == "Character")
 		{
 			Character* character = (Character*)targetObj->GetPhysics()->GetBody()->GetUserData();
 
@@ -47,7 +47,7 @@ HRESULT Ladder::Init()
 
 	SetCollisionExitFunc([&](GameObject* thisObj, GameObject* targetObj)
 	{
-		if (targetObj->GetTag() == "character")
+		if (targetObj->GetTag() == "Character")
 		{
 			Character* character = (Character*)targetObj->GetPhysics()->GetBody()->GetUserData();
 			//character->SetState(IDLE);

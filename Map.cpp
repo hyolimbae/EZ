@@ -222,9 +222,14 @@ HRESULT Map::Init()
 	_lift->SetSprite(IMAGEMANAGER->FindImage("Lift"));
 	SceneManager::GetInstance()->GetNowScene()->AddChild(_lift);
 	_lift->GetPhysics()->SetBodyType(b2_staticBody);
+
+	//_lift->GetPhysics()->SetBody(PHYSICSMANAGER->CreateBody
+
+
+
 	_lift->GetPhysics()->SetBody(PHYSICSMANAGER->CreateDefaultBody(_lift,
 		_lift->GetTransform()->GetSize().x*BACKGROUND_SCALE,
-		_lift->GetTransform()->GetSize().y*BACKGROUND_SCALE));
+		(_lift->GetTransform()->GetSize().y - 102)*BACKGROUND_SCALE));
 
 
 	//¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á Door

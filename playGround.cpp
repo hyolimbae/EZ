@@ -16,6 +16,8 @@ HRESULT playGround::Init()
 {
 	gameNode::Init(true);
 
+	ApplicationManager::GetInstance()->SetResolution(WINSIZEX, WINSIZEY, false);
+
 #pragma region AddImage
 
 	//IMAGE - UI 
@@ -81,17 +83,12 @@ HRESULT playGround::Init()
 #pragma endregion 
 	
 
-	//LEFT_TOP
-	//CAMERAMANAGER->SetPosition(Vector2((-1)*BACKGROUND_WIDTH/2+WINSIZEX/2, (-1)*BACKGROUND_HEIGHT/2+WINSIZEY/2));
-
 	//map init 
 	map = new Map();
 	map->Init();
 
 
-
 	cm = new CharacterManager();
-
 
 	//character test inint 
 	auto _erik = new Erik();
@@ -164,6 +161,7 @@ HRESULT playGround::Init()
 
 
 	ui = new UI();
+	ui->Init();
 	AddChild(ui);
 	ui->SetZOrder(10);
 	ui->SetIsUI(true);

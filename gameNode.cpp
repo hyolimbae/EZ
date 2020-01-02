@@ -78,6 +78,8 @@ void gameNode::Update()
 	KEYMANAGER->Update();
 	PHYSICSMANAGER->Update();
 	CAMERAMANAGER->Update();
+
+
 	Object::Update();
 }
 
@@ -157,8 +159,21 @@ LRESULT gameNode::MainProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lPara
 	}
 	break;
 
-
+	case WM_ACTIVATE:
+		if (!ApplicationManager::GetInstance()->GetIsFullScreen())
+			break;
+		switch (LOWORD(wParam))
+		{
+		case WA_ACTIVE:
+			ApplicationManager::GetInstance()->UpdateScreen();
+			break;
+		case WA_INACTIVE:
+			ApplicationManager::GetInstance()->ExitFullScreen();
+			break;
+		}
+		break;
 	case WM_DESTROY:
+		ApplicationManager::GetInstance()->ExitFullScreen();
 		PostQuitMessage(0);
 		break;
 	}
