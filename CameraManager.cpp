@@ -4,7 +4,7 @@
 CameraManager::CameraManager()
 {
 	_transform = new Transform();
-	_transform->SetPosition(Vector2(WINSIZEX / 2, WINSIZEY / 2));
+	SetPosition(Vector2(0,0));
 	_transform->SetRotation(0);
 	_transform->SetScale(1);
 }
@@ -31,25 +31,25 @@ void CameraManager::Update()
 {
 	Vector2 nowPosition;
 
-	if (!isMoving)
+	if (!_isMoving)
 		return;
 
 	_lerpCount += 1.f / (TIMEMANAGER->GetFPS() * _moveTime);
 
 	nowPosition = Vector2::Lerp(_startPosition, _endPosition, _lerpCount);
-	_transform->SetPosition(nowPosition);
+	SetPosition(nowPosition);
 
-	if (_lerpCount > 1)
+	if (_lerpCount >= 1)
 	{
 		_lerpCount = 0;
-		isMoving = false;
+		_isMoving = false;
 	}
 }
 
 void CameraManager::MoveCamera(Vector2 endPosition, float moveTime)
 {
-	isMoving = true;
-	_startPosition = _transform->GetPosition();
+	_isMoving = true;
+	_startPosition = GetPosition();
 	_endPosition = endPosition;
 	_moveTime = moveTime;
 }

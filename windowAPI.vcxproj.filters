@@ -237,6 +237,9 @@
     <ClInclude Include="Map.h">
       <Filter>playGround\map</Filter>
     </ClInclude>
+    <ClInclude Include="CharacterManager.h">
+      <Filter>playGround</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -394,6 +397,9 @@
     </ClCompile>
     <ClCompile Include="Map.cpp">
       <Filter>playGround\map</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterManager.cpp">
+      <Filter>playGround</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

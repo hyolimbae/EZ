@@ -31,7 +31,7 @@ public:
 	//create & destroy body
 	b2Body* CreateBody(GameObject* obj);
 	b2Shape* CreateShape(b2Body* body, float width, float height);
-	b2Shape* CreateShape(b2Body* body);
+	b2Shape* CreateShape(b2Body* body,bool transformApplied = false);
 	b2Fixture* CreateFixture(b2Body* body, b2Shape* shape);
 	void DestroyBody(b2Body* body);
 

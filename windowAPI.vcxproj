@@ -152,6 +152,7 @@
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="CameraManager.h" />
     <ClInclude Include="Character.h" />
+    <ClInclude Include="CharacterManager.h" />
     <ClInclude Include="commonMacroFunction.h" />
     <ClInclude Include="DebugDraw.h" />
     <ClInclude Include="Door.h" />
@@ -212,6 +213,7 @@
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="CameraManager.cpp" />
     <ClCompile Include="Character.cpp" />
+    <ClCompile Include="CharacterManager.cpp" />
     <ClCompile Include="DebugDraw.cpp" />
     <ClCompile Include="Door.cpp" />
     <ClCompile Include="ElectricBox.cpp" />

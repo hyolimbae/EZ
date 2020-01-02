@@ -13,6 +13,13 @@ gameNode::~gameNode()
 
 HRESULT gameNode::Init()
 {
+	//물리 세계 초기화 
+	//b2Vec2 gravity(0.0f, -9.8f);
+	//_physicsWorld = new b2World(gravity);
+	//_physicsWorld->SetAllowSleeping(true);
+	//_physicsWorld->SetContinuousPhysics(true);
+
+
 
 	_hdc = GetDC(_hWnd);
 	_managerInit = false;
@@ -33,7 +40,7 @@ HRESULT gameNode::Init(bool managerInit)
 
 	if (_managerInit)
 	{
-		SetTimer(_hWnd, 1, 1.f/60, NULL);
+		SetTimer(_hWnd, 1, 1.f / 60, NULL);
 		IMAGEMANAGER->Init();
 		TXTDATA->Init();
 		TIMEMANAGER->Init();
@@ -68,12 +75,10 @@ void gameNode::Release()
 
 void gameNode::Update()
 {
-	Object::Update();
 	KEYMANAGER->Update();
 	PHYSICSMANAGER->Update();
 	CAMERAMANAGER->Update();
-	for (auto c : _children)
-		c->Update();
+	Object::Update();
 }
 
 void gameNode::Render()
@@ -89,7 +94,9 @@ void gameNode::Render()
 	//==================================================
 
 	for (auto c : _children)
+	{
 		c->Render();
+	}
 
 
 	PHYSICSMANAGER->Render();
@@ -117,45 +124,45 @@ LRESULT gameNode::MainProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lPara
 
 	switch (iMessage)
 	{
-		case WM_CREATE:
+	case WM_CREATE:
 
-			break;
-		case WM_TIMER:
-			this->Update();
-			break;
-		case WM_PAINT:
-		{
-			hdc = BeginPaint(hWnd, &ps);
-
-			this->Render();
-
-			EndPaint(hWnd, &ps);
-		}
 		break;
-		//왼쪽클릭하고있으면
+	case WM_TIMER:
+		this->Update();
+		break;
+	case WM_PAINT:
+	{
+		hdc = BeginPaint(hWnd, &ps);
 
-		case WM_MOUSEMOVE:
-			_ptMouse.x = static_cast<float>(LOWORD(lParam));
-			_ptMouse.y = static_cast<float>(HIWORD(lParam));
-			break;
+		this->Render();
 
-		case WM_KEYDOWN:
-		{
-			switch (wParam)
-			{
-			case VK_ESCAPE:
-				PostQuitMessage(0);
-				break;
-			}
-		}
+		EndPaint(hWnd, &ps);
+	}
+	break;
+	//왼쪽클릭하고있으면
+
+	case WM_MOUSEMOVE:
+		_ptMouse.x = static_cast<float>(LOWORD(lParam));
+		_ptMouse.y = static_cast<float>(HIWORD(lParam));
 		break;
 
-
-		case WM_DESTROY:
+	case WM_KEYDOWN:
+	{
+		switch (wParam)
+		{
+		case VK_ESCAPE:
 			PostQuitMessage(0);
 			break;
+		}
 	}
-	
+	break;
+
+
+	case WM_DESTROY:
+		PostQuitMessage(0);
+		break;
+	}
+
 
 	return (DefWindowProc(hWnd, iMessage, wParam, lParam));
 }

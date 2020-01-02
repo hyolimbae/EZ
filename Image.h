@@ -63,8 +63,8 @@ public:
 	void Release();
 
 	//랜더
-	void Render(int x, int y, Pivot::Enum pivot = Pivot::LEFT_TOP, bool isRelativePos = TRUE);
-	void FrameRender(int x, int y, int frameX, Pivot::Enum pivot = Pivot::LEFT_TOP, bool isRelativePos = TRUE);
+	void Render(int x, int y, Pivot::Enum pivot = Pivot::LEFT_TOP, bool isUI = TRUE);
+	void FrameRender(int x, int y, int frameX, bool isUI = TRUE, Pivot::Enum pivot = Pivot::LEFT_TOP);
 
 
 	//옵션
@@ -99,7 +99,7 @@ public:
 
 	bool IsFrameImage()
 	{
-		if (_frameInfo.size() == 1) 
+		if (_frameInfo.size() == 1)
 			return false;
 		else if (_frameInfo.size() > 1)
 			return true;

@@ -28,7 +28,7 @@ Image* GameObject::GetSprite()
 }
 
 
-void GameObject::SetCollisionEnterFunc(function<void(GameObject*,GameObject*)> enter)
+void GameObject::SetCollisionEnterFunc(function<void(GameObject*, GameObject*)> enter)
 {
 	_callBack._enter = enter;
 }
@@ -51,7 +51,7 @@ void GameObject::Update()
 	_count++;
 	if (TIMEMANAGER->GetFPS()*_deltaTime / _count == 1)
 	{
-		_currentPosition.x = (int)(_currentPosition.x+1) % (_sprite->GetMaxFrameX());
+		_currentPosition.x = (int)(_currentPosition.x + 1) % (_sprite->GetMaxFrameX());
 		_count = 0;
 	}
 	_currentPosition.y = 0;
@@ -69,8 +69,8 @@ void GameObject::Render()
 	_sprite->SetSize(_transform->GetSize());
 
 
-	if(_sprite->IsFrameImage()) 
-		_sprite->FrameRender(position.x, position.y, _currentPosition.x, Pivot::CENTER);
-	else 
-		_sprite->Render(position.x, position.y,Pivot::CENTER);
+	if (_sprite->IsFrameImage())
+		_sprite->FrameRender(position.x, position.y, _currentPosition.x, _isUI, Pivot::CENTER);
+	else
+		_sprite->Render(position.x, position.y, Pivot::CENTER, _isUI);
 }

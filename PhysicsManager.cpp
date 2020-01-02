@@ -121,7 +121,7 @@ b2Shape * PhysicsManager::CreateShape(b2Body * body, float width, float height)
 
 }
 
-b2Shape * PhysicsManager::CreateShape(b2Body * body)
+b2Shape * PhysicsManager::CreateShape(b2Body * body, bool transformApplied)
 {
 	GameObject* obj = (GameObject*)body->GetUserData();
 	Physics* physics = obj->GetPhysics();
@@ -132,10 +132,15 @@ b2Shape * PhysicsManager::CreateShape(b2Body * body)
 	SHAPETYPE type = physics->GetShapeType();
 	b2Shape* shape;
 
+	Vector2 size = transform->GetSize() * transform->GetScale();
+
 	if (type == BOX)
 	{
 		shape = new b2PolygonShape;
-		((b2PolygonShape *)shape)->SetAsBox(obj->GetSprite()->GetWidth() *PIXELTOMETER / 2, obj->GetSprite()->GetHeight() *PIXELTOMETER/ 2);
+		if(!transformApplied)
+			((b2PolygonShape *)shape)->SetAsBox(obj->GetSprite()->GetWidth() *PIXELTOMETER / 2, obj->GetSprite()->GetHeight() *PIXELTOMETER/ 2);
+		else
+			((b2PolygonShape *)shape)->SetAsBox(size.x* PIXELTOMETER / 2, size.y *PIXELTOMETER / 2);
 		return shape;
 	}
 	else

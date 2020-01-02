@@ -38,6 +38,12 @@ void Object::SetParent(Object* parent)
 void Object::Update()
 {
 	_children.sort(Compare);
+	for (auto c : _children)
+	{
+		if (!c->GetAllowsUpdate())
+			continue;
+		c->Update();
+	}
 }
 
 

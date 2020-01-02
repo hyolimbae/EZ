@@ -82,27 +82,27 @@ HRESULT playGround::Init()
 	
 
 	//LEFT_TOP
-	CAMERAMANAGER->SetPosition(Vector2((-1)*BACKGROUND_WIDTH/2+WINSIZEX/2, (-1)*BACKGROUND_HEIGHT/2+WINSIZEY/2));
+	//CAMERAMANAGER->SetPosition(Vector2((-1)*BACKGROUND_WIDTH/2+WINSIZEX/2, (-1)*BACKGROUND_HEIGHT/2+WINSIZEY/2));
 
 	//map init 
 	map = new Map();
 	map->Init();
 
 
+
+	cm = new CharacterManager();
+
+
 	//character test inint 
-	auto _erik = (GameObject*) new Erik();
+	auto _erik = new Erik();
 	_erik->SetTag("Character");
 	_erik->SetName("Erik");
 	_erik->Init();
-	_erik->GetTransform()->SetSize(Vector2(70, 120));
-
-	_erik->GetTransform()->SetScale(2.5);
-
-	//_erik->GetTransform()->SetScale(BACKGROUND_SCALE);
-
+	_erik->GetTransform()->SetSize(Vector2(26, 33));
+	_erik->GetTransform()->SetScale(2.5f);
 	_erik->GetTransform()->SetPosition(Hyolim_LeftTop(	Vector2(555, 100),
-														_erik->GetTransform()->GetSize().x*BACKGROUND_SCALE,
-														_erik->GetTransform()->GetSize().y*BACKGROUND_SCALE));
+														_erik->GetTransform()->GetSize().x,
+														_erik->GetTransform()->GetSize().y));
 	_erik->SetDeltaTime(0.7);
 
 
@@ -110,19 +110,18 @@ HRESULT playGround::Init()
 	_erik->GetPhysics()->SetBody(PHYSICSMANAGER->CreateBody(_erik));
 	_erik->GetPhysics()->SetVelocity(Vector2(0.f, 0.f));
 	_erik->GetPhysics()->SetShapeType(BOX);
-	b2Shape* erikShape = PHYSICSMANAGER->CreateShape(	_erik->GetPhysics()->GetBody(),
-														_erik->GetTransform()->GetSize().x*BACKGROUND_SCALE,
-														(_erik->GetTransform()->GetSize().y-30)*BACKGROUND_SCALE);
+	b2Shape* erikShape = PHYSICSMANAGER->CreateShape(	_erik->GetPhysics()->GetBody(),true);
 	_erik->GetPhysics()->SetFixture(PHYSICSMANAGER->CreateFixture(_erik->GetPhysics()->GetBody(), erikShape));
 	_erik->GetPhysics()->SetCategoryBit(0x0002);
 	AddChild(_erik);
 
-	/*auto _olaf = (GameObject*) new Olaf();
+
+	auto _olaf = new Olaf();
 	_olaf->SetTag("Character");
 	_olaf->SetName("Olaf");
 	_olaf->Init();
-	_olaf->GetTransform()->SetSize(Vector2(100, 120));
-	_olaf->GetTransform()->SetScale(2.3);
+	_olaf->GetTransform()->SetSize(Vector2(26, 33));
+	_olaf->GetTransform()->SetScale(2.5f);
 	_olaf->GetTransform()->SetPosition(Hyolim_LeftTop(	Vector2(1833, 1066),
 														_olaf->GetTransform()->GetSize().x*BACKGROUND_SCALE,
 														_olaf->GetTransform()->GetSize().y*BACKGROUND_SCALE));
@@ -130,20 +129,20 @@ HRESULT playGround::Init()
 	_olaf->GetPhysics()->SetBody(PHYSICSMANAGER->CreateBody(_olaf));
 	_olaf->GetPhysics()->SetVelocity(Vector2(0.f, 0.f));
 	_olaf->GetPhysics()->SetShapeType(BOX);
-	b2Shape* olafShape = PHYSICSMANAGER->CreateShape(_olaf->GetPhysics()->GetBody(),
-		_olaf->GetTransform()->GetSize().x*BACKGROUND_SCALE,
-		_olaf->GetTransform()->GetSize().y*BACKGROUND_SCALE);
+
+	b2Shape* olafShape = PHYSICSMANAGER->CreateShape(_olaf->GetPhysics()->GetBody(),true);
+
 	_olaf->GetPhysics()->SetFixture(PHYSICSMANAGER->CreateFixture(_olaf->GetPhysics()->GetBody(), olafShape));
 	_olaf->GetPhysics()->SetCategoryBit(0x0004);
 	AddChild(_olaf);
 
 
-	auto _baleog = (GameObject*) new Baleog();
+	auto _baleog =  new Baleog();
 	_baleog->SetTag("Character");
 	_baleog->SetName("Baleog");
 	_baleog->Init();
-	_baleog->GetTransform()->SetSize(Vector2(100, 120));
-	_baleog->GetTransform()->SetScale(2.3);
+	_baleog->GetTransform()->SetSize(Vector2(26, 33));
+	_baleog->GetTransform()->SetScale(2.5);
 	_baleog->GetTransform()->SetPosition(Hyolim_LeftTop(	Vector2(2535, 1731),
 															_baleog->GetTransform()->GetSize().x*BACKGROUND_SCALE,
 															_baleog->GetTransform()->GetSize().y*BACKGROUND_SCALE));
@@ -151,18 +150,28 @@ HRESULT playGround::Init()
 	_baleog->GetPhysics()->SetBody(PHYSICSMANAGER->CreateBody(_baleog));
 	_baleog->GetPhysics()->SetVelocity(Vector2(0.f, 0.f));
 	_baleog->GetPhysics()->SetShapeType(BOX);
-	b2Shape* baleogShape = PHYSICSMANAGER->CreateShape(	_baleog->GetPhysics()->GetBody(),
-														_baleog->GetTransform()->GetSize().x*BACKGROUND_SCALE,
-														_baleog->GetTransform()->GetSize().y*BACKGROUND_SCALE);
+	b2Shape* baleogShape = PHYSICSMANAGER->CreateShape(	_baleog->GetPhysics()->GetBody(),true);
 	_baleog->GetPhysics()->SetFixture(PHYSICSMANAGER->CreateFixture(_baleog->GetPhysics()->GetBody(), baleogShape));
 	_baleog->GetPhysics()->SetCategoryBit(0x0006);
 	AddChild(_baleog);
 
 
+
+	cm->AddCharacter(_erik);
+	cm->AddCharacter(_baleog);
+	cm->AddCharacter(_olaf);
+	AddChild(cm);
+
+
+	ui = new UI();
+	AddChild(ui);
+	ui->SetZOrder(10);
+	ui->SetIsUI(true);
+	ui->SetLink(cm);
 	
-	PHYSICSMANAGER->IgnoreCollision(_olaf, _erik);
-	PHYSICSMANAGER->IgnoreCollision(_olaf, _baleog);
-	PHYSICSMANAGER->IgnoreCollision(_baleog, _erik);*/
+	PHYSICSMANAGER->IgnoreCollision(_olaf,   _erik);
+	PHYSICSMANAGER->IgnoreCollision(_olaf,   _baleog);
+	PHYSICSMANAGER->IgnoreCollision(_baleog, _erik);
 	
 	
 

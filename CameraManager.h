@@ -13,7 +13,7 @@ private:
 	float _moveTime = 0;
 	float _scale;
 	float _rotation;
-	bool isMoving = false;
+	bool _isMoving = false;
 public:
 	CameraManager();
 
@@ -29,5 +29,7 @@ public:
 
 	void SetScale(float scale);
 	float GetScale() { return _scale; }
+
+	bool GetIsMoving() { return _isMoving; }
 };
 

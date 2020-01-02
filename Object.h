@@ -8,7 +8,7 @@ protected:
 
 	Object* _parent = nullptr;
 	list<Object*> _children;
-
+	bool _allowsUpdate = true;
 
 public:
 	virtual HRESULT Init() { return S_OK; }
@@ -19,6 +19,8 @@ public:
 	void SetParent(Object* parent);
 	void AddChild(Object* child);
 	void RemoveChild(Object* child);
+	void SetAllowsUpdate(bool allowsUpdate) { _allowsUpdate = allowsUpdate; }
+	bool GetAllowsUpdate() { return _allowsUpdate; }
 
 
 	//Getter
