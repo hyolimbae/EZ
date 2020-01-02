@@ -7,6 +7,7 @@
 
 #include "CharacterManager.h"
 #include "UI.h"
+#include "Item.h"
 
 using namespace std;
 
@@ -16,6 +17,7 @@ private:
 	Map* map;
 	CharacterManager* cm;
 	UI* ui;
+	Item* item;
 
 public:
 	playGround();
