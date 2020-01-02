@@ -26,6 +26,7 @@ using namespace std;
 #include "CameraManager.h"
 #include "SceneManager.h"
 #include "gameNode.h"
+#include "ApplicationManager.h"
 
 using namespace SEVENTEEN_UTIL;
 
@@ -38,7 +39,7 @@ using namespace SEVENTEEN_UTIL;
 #define WINSTARTY 50
 #define WINSIZEX 800
 #define WINSIZEY 600
-#define WINSTYLE WS_CAPTION | WS_SYSMENU
+#define WINSTYLE WS_VISIBLE || WS_BORDER || WS_CAPTION
 
 #define RND randomFunction::getSingleton()
 #define KEYMANAGER KeyManager::getSingleton()

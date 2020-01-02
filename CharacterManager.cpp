@@ -3,8 +3,10 @@
 
 void CharacterManager::AddCharacter(Character* character)
 {
+	if (_characters.size())
+		character->SetAllowsUpdate(false);
+
 	_characters.push_back(character);
-	character->SetAllowsUpdate(false);
 }
 
 void CharacterManager::ChangeCharacter()

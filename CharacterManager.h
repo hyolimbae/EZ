@@ -11,7 +11,7 @@ class CharacterManager : public GameObject
 private:
 
 	vector<Character*> _characters;
-	int _nowCharacterNumber;
+	int _nowCharacterNumber = 0;
 
 public:
 	void AddCharacter(Character* character);

@@ -2,8 +2,6 @@
 #include "GameObject.h"
 #include "State.h"
 
-#define MAXHP 3
-
 class State;
 
 enum ATKType
@@ -18,8 +16,7 @@ private:
 	State* _state;
 	bool _onGround;
 	ATKType _atkType;
-	int _hp = 3;
-	bool _usedShoe = false;
+	int _hp =3;
 
 public:
 	Character() { _physics = new Physics(); }
@@ -34,10 +31,9 @@ public:
 	//============= GETTER ====================
 	ATKType GetATKType() { return _atkType; }
 	int GetHP() { return _hp; }
-	bool GetIfUsedShoe() { return _usedShoe; }
+
 	//============= SETTER ====================
 	void SetATKType(ATKType type) { _atkType = type; }
 	void SetHP(int hp) { _hp = hp; }
-	void SetIfUsedShoe(bool trueOrFalse) { _usedShoe = trueOrFalse; }
 };
 

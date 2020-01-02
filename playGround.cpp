@@ -16,6 +16,8 @@ HRESULT playGround::Init()
 {
 	gameNode::Init(true);
 
+	ApplicationManager::GetInstance()->SetResolution(WINSIZEX, WINSIZEY, false);
+
 #pragma region AddImage
 
 	//IMAGE - UI 
@@ -56,6 +58,7 @@ HRESULT playGround::Init()
 	IMAGEMANAGER->AddFrameImage("Erik_Grinder", L"Image/Erik_Grinder2.png", 9, 1);
 	IMAGEMANAGER->AddFrameImage("Erik_Electric", L"Image/Erik_Electric.png", 2, 1);
 
+
 	IMAGEMANAGER->AddFrameImage("Erik_Idle", L"Image/Erik_Sprite/Erik_idle_02.png", 2, 1);
 	IMAGEMANAGER->AddFrameImage("Erik_Run", L"Image/Erik_Sprite/Erik_Run.png", 8, 1);
 	IMAGEMANAGER->AddFrameImage("Erik_Jump", L"Image/Erik_Sprite/Erik_jump.png", 4, 1);
@@ -77,33 +80,15 @@ HRESULT playGround::Init()
 	IMAGEMANAGER->AddFrameImage("baleog_broken_arrow_right", L"Image/Baleog_sprite/baleog_broken_arrow_right.png", 3, 1, false);
 	IMAGEMANAGER->AddFrameImage("Baleog_Electric_shock_main", L"Image/Baleog_sprite/Baleog_Electric_shock_main.png", 2, 1, false);
 	IMAGEMANAGER->AddFrameImage("Baleog_Shoot_arrow", L"Image/Baleog_sprite/Baleog_Shoot_arrow.png", 8, 1, false);
-
-	//IMAGE - ITEM
-	IMAGEMANAGER->AddImage("Meat", L"meat.png");
-	IMAGEMANAGER->AddImage("Tomato", L"tomato.png");
-	IMAGEMANAGER->AddImage("Key", L"key.png");
-	IMAGEMANAGER->AddImage("Shoes", L"gravityShoes.png");
-
-
-
 #pragma endregion 
 	
-
-	//LEFT_TOP
-	//CAMERAMANAGER->SetPosition(Vector2((-1)*BACKGROUND_WIDTH/2+WINSIZEX/2, (-1)*BACKGROUND_HEIGHT/2+WINSIZEY/2));
 
 	//map init 
 	map = new Map();
 	map->Init();
 
 
-	//item init
-	item = new Item();
-	item->Init();
-
 	cm = new CharacterManager();
-
-	item->SetLink(cm);
 
 	//character test inint 
 	auto _erik = new Erik();
@@ -176,6 +161,7 @@ HRESULT playGround::Init()
 
 
 	ui = new UI();
+	ui->Init();
 	AddChild(ui);
 	ui->SetZOrder(10);
 	ui->SetIsUI(true);
@@ -186,8 +172,6 @@ HRESULT playGround::Init()
 	PHYSICSMANAGER->IgnoreCollision(_baleog, _erik);
 	
 	
-
-
 
 	return S_OK;
 }
