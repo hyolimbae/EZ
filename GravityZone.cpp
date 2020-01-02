@@ -1,5 +1,8 @@
 #include "stdafx.h"
 #include "GravityZone.h"
+#include "Olaf.h"
+#include "Erik.h"
+#include "Baleog.h"
 
 HRESULT GravityZone::Init()
 {
@@ -19,11 +22,45 @@ HRESULT GravityZone::Init()
 		if (targetObj->GetTag() == "Character")
 		{
 			Character* character = (Character*)targetObj->GetPhysics()->GetBody()->GetUserData();
+			Olaf* olaf = (Olaf*)targetObj->GetPhysics()->GetBody()->GetUserData();
+			Erik* erik = (Erik*)targetObj->GetPhysics()->GetBody()->GetUserData();
+			Baleog* baleog = (Baleog*)targetObj->GetPhysics()->GetBody()->GetUserData();
 
 			if (thisObj->GetTag() == "gravityZone")
 			{
-				GameObject* GravityZone = (GameObject*)thisObj->GetParent()->GetChildByName("gravityZone");
-				character->GetPhysics()->GetBody()->SetGravityScale(-0.05f);
+				if (targetObj->GetName() == "Olaf")
+				{
+					if (olaf->GetIfUsedShoe() == true)
+					{
+						olaf->GetPhysics()->GetBody()->SetGravityScale(1);
+					}
+					else 
+					{
+						targetObj->GetPhysics()->GetBody()->SetGravityScale(-0.05f);
+					}
+				}
+				if (targetObj->GetName() == "Erik")
+				{
+					if (erik->GetIfUsedShoe() == true)
+					{
+						erik->GetPhysics()->GetBody()->SetGravityScale(1);
+					}
+					else
+					{
+						targetObj->GetPhysics()->GetBody()->SetGravityScale(-0.05f);
+					}
+				}
+				if (targetObj->GetName() == "Baleog")
+				{
+					if (baleog->GetIfUsedShoe() == true)
+					{
+						baleog->GetPhysics()->GetBody()->SetGravityScale(1);
+					}
+					else
+					{
+						targetObj->GetPhysics()->GetBody()->SetGravityScale(-0.05f);
+					}
+				}
 			}
 		}
 	});
